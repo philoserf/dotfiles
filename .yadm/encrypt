@@ -1,0 +1,4 @@
+.secrets.d/*
+.ssh/id_rsa
+.ssh/*.key
+.ssh/*.pub

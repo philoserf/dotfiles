@@ -1,0 +1,17 @@
+# title ------------------------------------------
+Subject
+
+# start with why -------------------------------------------------------
+# use bullets
+# - reformat JSON files to js-beautify standard
+- body
+
+# e.g closes #123, fixes #321, resolves org/repo#222
+footer
+
+# end ------------------------------------------------------------------
+
+# be sure that each commit does one thing.
+# a pull request can have many single purpose commits.
+
+# types: feature, fix, docs, build, test, ci, style, refactor, revert
