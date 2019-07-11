@@ -1,0 +1,38 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: all
+
+  all:
+    desc: all
+    cmds:
+      - task: bundle
+      - task: check
+      - task: rubies
+      - task: system
+
+  bundle:
+    desc: update
+    cmds:
+      - brew bundle install --global
+  check:
+    desc: check
+    cmds:
+      - brew bundle cleanup --global
+  clean:
+    desc: clean
+    cmds:
+      - brew bundle cleanup --global --force
+
+  rubies:
+    desc: rubies
+    cmds:
+      - bundle update --ruby --bundler
+      - bundle clean --force
+
+  system:
+    desc: system
+    cmds:
+      - softwareupdate --install --all
