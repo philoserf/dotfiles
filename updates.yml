@@ -1,0 +1,51 @@
+---
+name: update
+usage: update installed software and optionally cleanup too
+
+tasks:
+  update:
+    run:
+      - command: brew update
+      - command: brew upgrade
+      - command: brew cask upgrade
+
+  cleanup:
+    run:
+      - command: brew cleanup -s
+
+  all:
+    run:
+      - task: update
+      - task: cleanup
+
+  bundle:
+    run:
+      - command: brew bundle install --global
+      - command: brew bundle check --global
+      - command: brew bundle cleanup --global
+
+  bundleup:
+    run:
+      - command: brew bundle cleanup --global --force
+
+  bundledown:
+    run:
+      - command: brew bundle dump --global --force
+
+  otherup:
+    run:
+      - command: rbenv update
+      - command: rbenv update-rubies
+      - command: rbenv rehash
+      - command: bundle update --ruby --bundler
+      - command: mas upgrade
+      - command: softwareupdate --install --all
+
+  otherclean:
+    run:
+      - command: bundle clean --force
+
+  otherall:
+    run:
+      - task: otherup
+      - task: otherclean
