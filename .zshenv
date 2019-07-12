@@ -9,12 +9,6 @@ if [[ $SHLVL == 1 ]]; then
 	PATH="$PATH:/usr/local/sbin:/usr/sbin:/sbin"
 	export PATH
 
-	[[ -n $ITERM_SESSION_ID ]] && source "$HOME/.iterm2_shell_integration.zsh"
-	[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
-	[[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
-	[[ ${commands[rbenv]} ]] && source <(rbenv init -)
-	[[ ${commands[jenv]} ]] && source <(jenv init -)
-
 	MANPATH="/usr/local/man:$MANPATH"
 	export MANPATH
 fi

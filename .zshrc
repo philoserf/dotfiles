@@ -7,15 +7,15 @@ HISTFILE="$HOME/.histfile"
 HISTCONTROL=ignorespace
 HISTSIZE=1000
 SAVEHIST=1000
-setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups histignorealldups histignoredups histignorespace histreduceblanks histsavenodups histverify incappendhistory sharehistory
+setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups histignorealldups histignoredups histignorespace histreduceblanks histsavenodups histverify incappendhistory sharehistory autocd nomatch
 
-setopt autocd nomatch
 bindkey -e
 zstyle :compinstall filename "$HOME/.zshenv"
 zstyle :compinstall filename "$HOME/.zshrc"
 zstyle :compinstall filename "$HOME/.zprofile"
 zstyle :compinstall filename "$HOME/.zlogin"
 zstyle :compinstall filename "$HOME/.zlogout"
+
 autoload -Uz compinit && compinit -u
 FPATH=/usr/local/share/zsh/site-functions:$FPATH
 autoload -Uz bashcompinit && bashcompinit -u

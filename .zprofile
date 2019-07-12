@@ -1,7 +1,7 @@
 #!/bin/bash
 # zprofile is sourced in login shell sessions
 # load order 2
-# shellcheck disable=SC2148,SC1090,SC1091
+# shellcheck disable=SC2148,SC1090,SC1091,SC2154
 
 source /usr/local/share/antigen/antigen.zsh
 
@@ -32,3 +32,8 @@ for folder in secrets.d init.d; do
 		source "$filename"
 	done
 done
+
+[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
+[[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
+[[ ${commands[rbenv]} ]] && source <(rbenv init -)
+[[ ${commands[jenv]} ]] && source <(jenv init -)

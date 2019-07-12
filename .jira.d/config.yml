@@ -1,0 +1,10 @@
+endpoint: https://jira.nordstrom.net
+project: sre
+user: x3c3
+login: x3c3
+password-source: keyring
+custom-commands:
+  - name: mine
+    help: display issues assigned to me
+    script: |-
+      {{jira}} list --query "resolution = unresolved and assignee=currentuser() ORDER BY created"
