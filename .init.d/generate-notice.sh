@@ -20,15 +20,6 @@ generate-notice() {
 		RANGE="${START_YEAR}-${END_YEAR}"
 	fi
 
-	git checkout -b add-license
-
-	action=""
-	if [ -e LICENSE ]; then
-		action="update"
-	else
-		action="create"
-	fi
-
 	cat >LICENSE <<EOF
 Copyright $RANGE Mark Ayers
 
@@ -57,7 +48,4 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
 EOF
-
-	git add LICENSE
-	git commit -m "$action LICENSE"
 }
