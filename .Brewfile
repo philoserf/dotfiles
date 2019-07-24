@@ -184,6 +184,7 @@ cask "controlplane"
 cask "docker"
 cask "dropbox"
 cask "fantastical"
+cask "fliqlo"
 cask "flux"
 cask "font-fira-code"
 cask "font-go"
@@ -247,7 +248,7 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "xquartz"
 cask "zoomus"
-# mas "Contacts+", id: 1094748271
+mas "Contacts+", id: 1094748271
 mas "Day One", id: 1055511498
 mas "Drafts", id: 1435957248
 mas "feedly", id: 865500966

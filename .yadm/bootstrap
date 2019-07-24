@@ -11,3 +11,6 @@ if [ "$system_type" = "Darwin" ]; then
 		brew bundle --global
 	fi
 fi
+
+git clone git@github.com:errata-ai/Microsoft.git "${HOME}/.config/vale/Microsoft"
+git clone git@github.com:errata-ai/Google.git "${HOME}/.config/vale/Google"

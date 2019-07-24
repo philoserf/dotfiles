@@ -17,6 +17,7 @@ module.exports = {
         borderColor: "#333",
         css: "",
         termCSS: "",
+        scrollback: "10000",
         showHamburgerMenu: "",
         showWindowControls: "",
         padding: "12px 14px",
