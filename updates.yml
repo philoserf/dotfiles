@@ -6,33 +6,39 @@ tasks:
   update:
     run:
       - command: brew update
+  upgrade:
+    run:
       - command: brew upgrade
       - command: brew cask upgrade
-
-  cleanup:
+  clean:
     run:
       - command: brew cleanup -s
-
   all:
     run:
       - task: update
-      - task: cleanup
+      - task: upgrade
+      - task: clean
 
-  bundle:
+  install:
     run:
       - command: brew bundle install --global
+  check:
+    run:
+      - command: brew bundle dump --force
+      - command: icdiff ~/.Brewfile Brewfile
+      - command: rm Brewfile
+  verify:
+    run:
       - command: brew bundle check --global
       - command: brew bundle cleanup --global
-
-  bundleup:
+  clean_bundle:
     run:
       - command: brew bundle cleanup --global --force
-
-  bundledown:
+  update_brewfile:
     run:
       - command: brew bundle dump --global --force
 
-  otherup:
+  update_others:
     run:
       - command: rbenv update
       - command: rbenv update-rubies
@@ -40,12 +46,10 @@ tasks:
       - command: bundle update --ruby --bundler
       - command: mas upgrade
       - command: softwareupdate --install --all
-
-  otherclean:
+  clean_others:
     run:
       - command: bundle clean --force
-
-  otherall:
+  all_others:
     run:
-      - task: otherup
-      - task: otherclean
+      - task: update_others
+      - task: clean_others
