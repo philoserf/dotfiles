@@ -37,3 +37,5 @@ done
 [[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)
 [[ ${commands[jenv]} ]] && source <(jenv init -)
+
+export PATH="$HOME/.cargo/bin:$PATH"
