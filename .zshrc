@@ -32,3 +32,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
 	export EDITOR='code --wait --new-window'
 fi
+
+unalias run-help
+autoload run-help
+alias help=run-help

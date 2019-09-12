@@ -1,43 +1,40 @@
----
 name: update
 usage: update installed software and optionally cleanup too
 
 tasks:
-  update:
-    run:
-      - command: brew update
-  upgrade:
-    run:
-      - command: brew upgrade
-      - command: brew cask upgrade
-  clean:
-    run:
-      - command: brew cleanup -s
   all:
     run:
       - task: update
       - task: upgrade
       - task: clean
-
-  install:
-    run:
-      - command: brew bundle install --global
+      - task: verify
   check:
     run:
       - command: brew bundle dump --force
       - command: icdiff ~/.Brewfile Brewfile
       - command: rm Brewfile
-  verify:
+  clean:
     run:
-      - command: brew bundle check --global
-      - command: brew bundle cleanup --global
+      - command: brew cleanup -s
   clean_bundle:
     run:
       - command: brew bundle cleanup --global --force
+  clean_others:
+    run:
+      - command: bundle clean --force
+  install:
+    run:
+      - command: brew bundle install --global
+  others:
+    run:
+      - task: update_others
+      - task: clean_others
+  update:
+    run:
+      - command: brew update
   update_brewfile:
     run:
       - command: brew bundle dump --global --force
-
   update_others:
     run:
       - command: rbenv update
@@ -46,10 +43,11 @@ tasks:
       - command: bundle update --ruby --bundler
       - command: mas upgrade
       - command: softwareupdate --install --all
-  clean_others:
+  upgrade:
     run:
-      - command: bundle clean --force
-  all_others:
+      - command: brew upgrade
+      - command: brew cask upgrade
+  verify:
     run:
-      - task: update_others
-      - task: clean_others
+      - command: brew bundle check --global
+      - command: brew bundle cleanup --global
