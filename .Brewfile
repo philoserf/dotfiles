@@ -196,6 +196,7 @@ cask "google-trends"
 cask "gpg-suite-no-mail"
 cask "graphiql"
 cask "hazel"
+cask "hook"
 cask "hyper"
 cask "imageoptim"
 cask "java11"
@@ -208,7 +209,6 @@ cask "kindle"
 cask "kindlegen"
 cask "kubernetic"
 cask "launchrocket"
-cask "logos"
 cask "marked"
 cask "now"
 cask "omnifocus"
@@ -233,11 +233,11 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "xquartz"
 cask "zoomus"
-mas "Contacts+", id: 1094748271
 mas "Day One", id: 1055511498
 mas "Drafts", id: 1435957248
 mas "feedly", id: 865500966
 mas "Gemini", id: 463541543
+mas "Grammarly for Safari", id: 1462114288
 mas "Highland 2", id: 1171820258
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
