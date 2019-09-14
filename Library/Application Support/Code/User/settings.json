@@ -1,0 +1,79 @@
+{
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.snippetSuggestions": "none",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.rulers": [100, 120, 50, 72, 78, 80],
+  "editor.suggestSelection": "first",
+  "git.autofetch": true,
+  "gitProjectManager.baseProjectsFolders": ["$HOME/go/src", "$HOME/source"],
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "go.lintFlags": [
+    "--enable-all"
+  ],
+  "go.lintTool": "golangci-lint",
+  "go.useLanguageServer": true,
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true
+  },
+  "files.eol": "\n",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "search.useGlobalIgnoreFiles": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.gist": "b47e21278cb625602aca9f7680b56c6a",
+  "sync.quietSync": false,
+  "terminal.external.osxExec": "Hyper.app",
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.scrollback": 10000,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Material Theme Lighter High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "sync.forceUpload": true,
+  "go.lintOnSave": "workspace",
+  "cloudcode.gke": {
+    "projectIds": [
+      "fbfk4pa73gppnwiwgfiowr8zyjjbed"
+    ]
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path": "/Users/x3c3/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.kubectl-path": "/Users/x3c3/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/Users/x3c3/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.draft-path": "/Users/x3c3/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+  },
+  "todo-tree.tree.filterCaseSensitive": true
+}
