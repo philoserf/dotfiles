@@ -1,7 +1,7 @@
 module.exports = {
     config: {
         updateChannel: "stable",
-        fontSize: 18,
+        fontSize: 14,
         fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: "normal",
         fontWeightBold: "bold",
@@ -49,7 +49,7 @@ module.exports = {
         macOptionSelectionMode: "vertical",
         webGLRenderer: true
     },
-    plugins: ["hypercwd", "hyper-material-theme", "hyper-pane", "hyper-search"],
+    plugins: ["hypercwd", "hyper-pane", "hyper-search", "hyper-one-light"],
     localPlugins: [],
     keymaps: {}
 };
