@@ -53,7 +53,7 @@
   "sync.quietSync": false,
   "terminal.external.osxExec": "Hyper.app",
   "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 10000,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.colorTheme": "Atom One Light",
@@ -70,10 +70,10 @@
     ]
   },
   "vs-kubernetes": {
-    "vs-kubernetes.helm-path": "/Users/mark/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vs-kubernetes.kubectl-path": "/Users/mark/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path": "/Users/mark/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vs-kubernetes.draft-path": "/Users/mark/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    "vs-kubernetes.helm-path": "/Users/x3c3/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.kubectl-path": "/Users/x3c3/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/Users/x3c3/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.draft-path": "/Users/x3c3/.vs-kubernetes/tools/draft/darwin-amd64/draft"
   },
   "todo-tree.tree.filterCaseSensitive": true
 }
