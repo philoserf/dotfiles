@@ -235,18 +235,3 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "xquartz"
 cask "zoomus"
-mas "Day One", id: 1055511498
-mas "Drafts", id: 1435957248
-mas "feedly", id: 865500966
-mas "Gemini", id: 463541543
-mas "Grammarly for Safari", id: 1462114288
-mas "Highland 2", id: 1171820258
-mas "iA Writer", id: 775737590
-mas "Keynote", id: 409183694
-mas "Mindful Mynah", id: 503981565
-mas "MindNode", id: 1289197285
-mas "Name Mangler", id: 603637384
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Pocket", id: 568494494
-mas "Xcode", id: 497799835
