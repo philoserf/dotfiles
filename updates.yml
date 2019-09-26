@@ -41,7 +41,6 @@ tasks:
       - command: rbenv update-rubies
       - command: rbenv rehash
       - command: bundle update --ruby --bundler
-      - command: mas upgrade
       - command: softwareupdate --install --all
   upgrade:
     run:
