@@ -6,7 +6,6 @@ tasks:
     run:
       - task: update
       - task: upgrade
-      - task: clean
       - task: verify
   check:
     run:
@@ -14,9 +13,6 @@ tasks:
       - command: icdiff ~/.Brewfile Brewfile
       - command: rm Brewfile
   clean:
-    run:
-      - command: brew cleanup -s
-  clean_bundle:
     run:
       - command: brew bundle cleanup --global --force
   clean_others:

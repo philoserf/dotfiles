@@ -70,10 +70,10 @@
     ]
   },
   "vs-kubernetes": {
-    "vs-kubernetes.helm-path": "/Users/x3c3/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vs-kubernetes.kubectl-path": "/Users/x3c3/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path": "/Users/x3c3/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vs-kubernetes.draft-path": "/Users/x3c3/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    "vs-kubernetes.helm-path": "/Users/mark/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.kubectl-path": "/Users/mark/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/Users/mark/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.draft-path": "/Users/mark/.vs-kubernetes/tools/draft/darwin-amd64/draft"
   },
   "todo-tree.tree.filterCaseSensitive": true
 }
