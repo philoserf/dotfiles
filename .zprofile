@@ -7,14 +7,19 @@ source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen bundle iterm2
-antigen bundle jenv
 antigen bundle kubectl
+antigen bundle helm
+
 antigen bundle rbenv
+antigen bundle jenv
+antigen bundle pyenv
+antigen bundle direnv
+
 antigen bundle ripgrep
+
 antigen bundle ssh-agent
+
 antigen bundle zsh_reload
-antigen bundle zsh-history-substring-search
 
 antigen bundle djui/alias-tips
 antigen bundle nojhan/liquidprompt
@@ -33,9 +38,9 @@ for folder in secrets.d init.d; do
 	done
 done
 
-[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
 [[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
+[[ ${commands[kubectl]} ]] && source <(helm completion zsh)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)
 [[ ${commands[jenv]} ]] && source <(jenv init -)
-
-export PATH="$HOME/.cargo/bin:$PATH"
+[[ ${commands[pyenv]} ]] && source <(pyenv init -)
+[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
