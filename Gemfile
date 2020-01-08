@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'bundler'
 gem 'explain_shell'
 gem 'gist'
-gem 'gitignores'
 gem 'mdless'
 gem 'rake'
 

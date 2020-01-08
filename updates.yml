@@ -7,37 +7,9 @@ tasks:
       - task: update
       - task: upgrade
       - task: verify
-  check:
-    run:
-      - command: brew bundle dump --force
-      - command: icdiff ~/.Brewfile Brewfile
-      - command: rm Brewfile
-  clean:
-    run:
-      - command: brew bundle cleanup --global --force
-  clean_others:
-    run:
-      - command: bundle clean --force
-  install:
-    run:
-      - command: brew bundle install --global
-  others:
-    run:
-      - task: update_others
-      - task: clean_others
   update:
     run:
       - command: brew update
-  update_brewfile:
-    run:
-      - command: brew bundle dump --global --force
-  update_others:
-    run:
-      - command: rbenv update
-      - command: rbenv update-rubies
-      - command: rbenv rehash
-      - command: bundle update --ruby --bundler
-      - command: softwareupdate --install --all
   upgrade:
     run:
       - command: brew upgrade
@@ -46,3 +18,33 @@ tasks:
     run:
       - command: brew bundle check --global
       - command: brew bundle cleanup --global
+
+  check:
+    run:
+      - command: brew bundle dump --force
+      - command: icdiff ~/.Brewfile Brewfile
+      - command: rm Brewfile
+  clean:
+    run:
+      - command: brew bundle cleanup --global --force
+  install:
+    run:
+      - command: brew bundle install --global
+  brewfile:
+    run:
+      - command: brew bundle dump --global --force
+
+  others:
+    run:
+      - task: rubies
+      - task: software
+  rubies:
+    run:
+      - command: rbenv update
+      - command: rbenv update-rubies
+      - command: rbenv rehash
+      - command: bundle update --ruby --bundler
+      - command: bundle clean --force
+  software:
+    run:
+      - command: softwareupdate --install --all
