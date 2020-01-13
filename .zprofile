@@ -40,7 +40,9 @@ done
 
 [[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
 [[ ${commands[kubectl]} ]] && source <(helm completion zsh)
-[[ ${commands[rbenv]} ]] && source <(rbenv init -)
+
+[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
+
 [[ ${commands[jenv]} ]] && source <(jenv init -)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
-[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
+[[ ${commands[rbenv]} ]] && source <(rbenv init -)
