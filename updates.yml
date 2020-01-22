@@ -2,7 +2,7 @@ name: update
 usage: update installed software and optionally cleanup too
 
 tasks:
-  all:
+  apps:
     run:
       - task: update
       - task: upgrade
@@ -34,10 +34,6 @@ tasks:
     run:
       - command: brew bundle dump --global --force
 
-  others:
-    run:
-      - task: rubies
-      - task: software
   rubies:
     run:
       - command: rbenv update
@@ -45,6 +41,13 @@ tasks:
       - command: rbenv rehash
       - command: bundle update --ruby --bundler
       - command: bundle clean --force
-  software:
+
+  system:
     run:
       - command: softwareupdate --install --all
+
+  all:
+    run:
+      - task: apps
+      - task: rubies
+      - task: system
