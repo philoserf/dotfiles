@@ -44,6 +44,7 @@
     "gitProjectManager.storeRepositoriesBetweenSessions": true,
     "go.lintFlags": [
         "--enable-all",
+        "--fix",
         "--max-issues-per-linter=0",
         "--max-same-issues=0",
         "--tests"
