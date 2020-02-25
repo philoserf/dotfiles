@@ -43,7 +43,10 @@
     ],
     "gitProjectManager.storeRepositoriesBetweenSessions": true,
     "go.lintFlags": [
-        "--enable-all"
+        "--enable-all",
+        "--max-issues-per-linter=0",
+        "--max-same-issues=0",
+        "--tests"
     ],
     "go.lintTool": "golangci-lint",
     "go.useLanguageServer": true,
@@ -73,7 +76,7 @@
         "**/.git": false
     },
     "sync.forceUpload": true,
-    "go.lintOnSave": "workspace",
+    "go.lintOnSave": "file",
     "cloudcode.gke": {
         "projectIds": [
             "fbfk4pa73gppnwiwgfiowr8zyjjbed"
@@ -91,5 +94,12 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.coverageOptions": "showUncoveredCodeOnly",
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.formatFlags": [
+        "-s"
+    ]
 }
