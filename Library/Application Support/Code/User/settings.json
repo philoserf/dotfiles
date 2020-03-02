@@ -101,5 +101,6 @@
     "go.coverOnSingleTestFile": true,
     "go.formatFlags": [
         "-s"
-    ]
+    ],
+    "todo-tree.tree.showScanModeButton": false
 }
