@@ -9,21 +9,14 @@ antigen use oh-my-zsh
 
 antigen bundle kubectl
 antigen bundle helm
-
 antigen bundle rbenv
-antigen bundle jenv
-antigen bundle pyenv
 antigen bundle direnv
-
 antigen bundle ripgrep
-
 antigen bundle ssh-agent
-
 antigen bundle zsh_reload
 
 antigen bundle djui/alias-tips
 antigen bundle nojhan/liquidprompt
-
 antigen bundle zsh-users/zsh-apple-touchbar
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
@@ -39,10 +32,7 @@ for folder in secrets.d init.d; do
 done
 
 [[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
-[[ ${commands[kubectl]} ]] && source <(helm completion zsh)
-
+[[ ${commands[helm]} ]] && source <(helm completion zsh)
 [[ ${commands[direnv]} ]] && source <(direnv hook zsh)
-
-[[ ${commands[jenv]} ]] && source <(jenv init -)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)

@@ -1,5 +1,5 @@
 # title ------------------------------------------
-# e.g.
+
 # Add: adding a feature
 # Remove: removing a feature
 # Fix: fixing a bug, test
@@ -10,12 +10,14 @@
 # Optimize: changes for performance
 
 # body -----------------------------------------------------------------
+
 # start with why
 # use bullets
 # e.g. - reformat JSON files with prettier
 
 # footer ---------------------------------------------------------------
-# e.g closes #123, fixes #321, resolves org/repo#222
+
+# closes #123, fixes #321, resolves org/repo#222
 
 # be sure that each commit does one thing
 # a pull request can have many single purpose commits

@@ -1,6 +1,6 @@
 [user]
-	name = Mark Ayers
-	email = mark@philoserf.com
+name = Mark Ayers
+email = mark@philoserf.com
 initials = ma
 
 [credential]
@@ -29,10 +29,10 @@ textconv = sops -d
 cmd = code --wait --diff $LOCAL $REMOTE
 
 [filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
 
 [alias]
 br = branch
@@ -87,9 +87,3 @@ staash = stash --include-untracked
 staaash = stash --all
 
 set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
-
-[url "git@gitlab.nordstrom.com:"]
-insteadOf = https://gitlab.nordstrom.com/
-
-# [url "git@github.com:"]
-# insteadOf = https://github.com/
