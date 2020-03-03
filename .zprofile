@@ -36,5 +36,3 @@ done
 [[ ${commands[direnv]} ]] && source <(direnv hook zsh)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)
-
-[[ ${commands[cod]} ]] && source <(cod init $$ zsh)
