@@ -1,29 +1,4 @@
 {
-    "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[go]": {
-        "editor.snippetSuggestions": "none",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
@@ -82,18 +57,9 @@
             "fbfk4pa73gppnwiwgfiowr8zyjjbed"
         ]
     },
-    "vs-kubernetes": {
-        "vs-kubernetes.helm-path": "/Users/x3c3/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vs-kubernetes.kubectl-path": "/Users/x3c3/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "/Users/x3c3/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.draft-path": "/Users/x3c3/.vs-kubernetes/tools/draft/darwin-amd64/draft"
-    },
     "todo-tree.tree.filterCaseSensitive": true,
     "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
     "todo-tree.highlights.enabled": true,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "diffEditor.ignoreTrimWhitespace": false,
     "go.coverageOptions": "showUncoveredCodeOnly",
     "go.coverOnSave": true,

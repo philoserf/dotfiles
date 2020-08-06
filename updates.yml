@@ -22,8 +22,10 @@ tasks:
   check:
     run:
       - command: brew bundle dump --force
-      - command: icdiff ~/.Brewfile Brewfile
-      - command: rm Brewfile
+      - command: sort ~/.Brewfile -o plan.tmp
+      - command: sort Brewfile -o real.tmp
+      - command: icdiff plan.tmp real.tmp
+      - command: rm Brewfile plan.tmp real.tmp
   clean:
     run:
       - command: brew bundle cleanup --global --force
