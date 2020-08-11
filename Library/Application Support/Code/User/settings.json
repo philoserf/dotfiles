@@ -1,72 +1,69 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.rulers": [
-        100,
-        120,
-        50,
-        72,
-        78,
-        80
-    ],
-    "editor.suggestSelection": "first",
-    "git.autofetch": true,
-    "gitProjectManager.baseProjectsFolders": [
-        "$HOME/go/src",
-        "$HOME/source"
-    ],
-    "gitProjectManager.storeRepositoriesBetweenSessions": true,
-    "go.lintFlags": [
-        "--enable-all",
-        "--max-issues-per-linter=0",
-        "--max-same-issues=0",
-        "--tests"
-    ],
-    "go.lintTool": "golangci-lint",
-    "go.useLanguageServer": true,
-    "go.alternateTools": {
-        "go-langserver": "gopls"
-    },
-    "go.languageServerExperimentalFeatures": {
-        "format": true,
-        "autoComplete": true
-    },
-    "files.eol": "\n",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "search.useGlobalIgnoreFiles": true,
-    "sync.autoDownload": true,
-    "sync.autoUpload": true,
-    "sync.gist": "b47e21278cb625602aca9f7680b56c6a",
-    "sync.quietSync": false,
-    "terminal.external.osxExec": "Hyper.app",
-    "terminal.integrated.fontFamily": "Fira Code",
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.scrollback": 10000,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.colorTheme": "Atom One Light",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "files.exclude": {
-        "**/.git": false
-    },
-    "sync.forceUpload": true,
-    "go.lintOnSave": "file",
-    "cloudcode.gke": {
-        "projectIds": [
-            "fbfk4pa73gppnwiwgfiowr8zyjjbed"
-        ]
-    },
-    "todo-tree.tree.filterCaseSensitive": true,
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
-    "todo-tree.highlights.enabled": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "go.coverageOptions": "showUncoveredCodeOnly",
-    "go.coverOnSave": true,
-    "go.coverOnSingleTest": true,
-    "go.coverOnSingleTestFile": true,
-    "go.formatFlags": [
-        "-s"
-    ],
-    "todo-tree.tree.showScanModeButton": false
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.rulers": [100, 120, 50, 72, 78, 80],
+  "editor.suggestSelection": "first",
+  "git.autofetch": true,
+  "gitProjectManager.baseProjectsFolders": ["$HOME/go/src", "$HOME/source"],
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "go.lintFlags": [
+    "--enable-all",
+    "--max-issues-per-linter=0",
+    "--max-same-issues=0",
+    "--tests"
+  ],
+  "go.lintTool": "golangci-lint",
+  "files.eol": "\n",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "search.useGlobalIgnoreFiles": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.gist": "b47e21278cb625602aca9f7680b56c6a",
+  "sync.quietSync": false,
+  "terminal.external.osxExec": "Hyper.app",
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.scrollback": 10000,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "sync.forceUpload": true,
+  "go.lintOnSave": "file",
+  "cloudcode.gke": {
+    "projectIds": ["fbfk4pa73gppnwiwgfiowr8zyjjbed"]
+  },
+  "todo-tree.tree.filterCaseSensitive": true,
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
+  "todo-tree.highlights.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "go.coverageOptions": "showUncoveredCodeOnly",
+  "go.coverOnSave": true,
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true,
+  "go.formatFlags": ["-s"],
+  "todo-tree.tree.showScanModeButton": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "Brewfile": "ruby",
+    ".Brewfile": "ruby"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.formatTool": "goimports"
 }

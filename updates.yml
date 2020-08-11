@@ -38,8 +38,8 @@ tasks:
 
   rubies:
     run:
-      - command: rbenv update
-      - command: rbenv update-rubies
+      # - command: rbenv update
+      # - command: rbenv update-rubies
       - command: rbenv rehash
       - command: bundle update --ruby --bundler
       - command: bundle clean --force

@@ -1,6 +1,6 @@
 [user]
-name = Mark Ayers
-email = mark@philoserf.com
+	name = Mark Ayers
+	email = mark.ayers@subsplash.com
 initials = ma
 
 [credential]
@@ -90,3 +90,6 @@ set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short H
 
 code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 cc = "!git code-changes"
+
+[url "git@subsplash.io:"]
+insteadOf = https://subsplash.io/
