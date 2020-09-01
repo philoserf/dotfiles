@@ -1,6 +1,6 @@
 [user]
-	name = Mark Ayers
-	email = mark.ayers@subsplash.com
+name = Mark Ayers
+email = mark.ayers@subsplash.com
 initials = ma
 
 [credential]
@@ -14,7 +14,7 @@ whitespace = warn
 template = ~/.gitmessage
 
 [push]
-default = current
+default = matching
 
 [interactive]
 singlekey = true

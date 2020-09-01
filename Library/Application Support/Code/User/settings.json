@@ -26,7 +26,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 10000,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorTheme": "Material Theme",
   "workbench.startupEditor": "newUntitledFile",
   "files.exclude": {
     "**/.git": false
@@ -65,5 +65,15 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "go.formatTool": "goimports"
+  "go.formatTool": "goimports",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlab.instanceUrl": "https://subsplash.io",
+  "window.zoomLevel": 0,
+  "nexusExplorer.dataSource": "iqServer",
+  "nexusiq.url": "https://nexusiq.subsplash.net:8070",
+  "nexusiq.username": "mark.ayers",
+  "nexusiq.password": "ThisIsThePlace",
+  "aws.profile": "profile:subsplashops"
 }

@@ -1,0 +1,66 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: all
+
+  all:
+    desc: all
+    cmds:
+      - task: apps
+      - task: rubies
+      - task: system
+  apps:
+    desc: apps
+    cmds:
+      - task: update
+      - task: upgrade
+      - task: verify
+  rubies:
+    desc: rubies
+    cmds:
+      - rbenv update
+      - rbenv update-rubies
+      - bundle update --ruby --bundler
+      - bundle clean --force
+      - rbenv rehash
+  system:
+    desc: system
+    cmds:
+      - softwareupdate --install --all
+
+  update:
+    desc: update
+    cmds:
+      - brew update
+  upgrade:
+    desc: upgrade
+    cmds:
+      - brew upgrade
+      - brew cask upgrade
+  verify:
+    desc: verify
+    cmds:
+      - brew bundle check --global
+      - brew bundle cleanup --global
+  check:
+    desc: check
+    cmds:
+      - brew bundle dump --force
+      - sort ~/.Brewfile -o plan.tmp
+      - sort Brewfile -o real.tmp
+      - icdiff plan.tmp real.tmp
+      - rm Brewfile plan.tmp real.tmp
+  clean:
+    desc: clean
+    cmds:
+      - brew bundle cleanup --global --force
+  install:
+    desc: install
+    cmds:
+      - brew bundle install --global
+  brewfile:
+    desc: brewfile
+    cmds:
+      - brew bundle dump --global --force

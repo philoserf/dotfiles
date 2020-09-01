@@ -2,7 +2,8 @@ module.exports = {
     config: {
         updateChannel: "stable",
         fontSize: 14,
-        fontFamily: '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily:
+            '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: "normal",
         fontWeightBold: "bold",
         lineHeight: 1,
@@ -37,7 +38,7 @@ module.exports = {
             lightBlue: "#6A76FB",
             lightMagenta: "#FD7CFC",
             lightCyan: "#68FDFE",
-            lightWhite: "#FFFFFF"
+            lightWhite: "#FFFFFF",
         },
         shell: "",
         shellArgs: ["--login"],
@@ -47,9 +48,17 @@ module.exports = {
         defaultSSHApp: true,
         quickEdit: false,
         macOptionSelectionMode: "vertical",
-        webGLRenderer: true
+        webGLRenderer: true,
     },
-    plugins: ["hypercwd", "hyper-pane", "hyper-search", "hyper-one-light"],
+    plugins: [
+        "hypercwd",
+        "hyperlinks",
+        "hyper-pane",
+        "hyper-search",
+        "hyper-autoprofile",
+        "hyper-material-theme",
+        "hyper-statusline-extended",
+    ],
     localPlugins: [],
-    keymaps: {}
+    keymaps: {},
 };

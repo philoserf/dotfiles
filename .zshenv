@@ -18,3 +18,5 @@ if [[ $SHLVL == 1 ]]; then
 	MANPATH="/usr/local/man:$MANPATH"
 	export MANPATH
 fi
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
