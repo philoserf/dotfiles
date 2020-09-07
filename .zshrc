@@ -29,3 +29,4 @@ fi
 unalias run-help
 autoload run-help
 alias help=run-help
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
