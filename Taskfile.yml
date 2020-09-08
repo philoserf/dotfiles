@@ -38,7 +38,7 @@ tasks:
     desc: upgrade
     cmds:
       - brew upgrade
-      - brew cask upgrade
+      - brew upgrade --cask
   verify:
     desc: verify
     cmds:

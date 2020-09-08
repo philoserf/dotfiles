@@ -14,7 +14,7 @@ whitespace = warn
 template = ~/.gitmessage
 
 [push]
-default = matching
+default = current
 
 [interactive]
 singlekey = true
