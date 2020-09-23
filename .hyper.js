@@ -54,6 +54,7 @@ module.exports = {
         "hypercwd",
         "hyperlinks",
         "hyper-pane",
+        "hyperlayout",
         "hyper-search",
         "hyper-statusline",
         "hyper-autoprofile",

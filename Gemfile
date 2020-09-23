@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'explain_shell'
 gem 'gist'
+gem 'hookapp'
 gem 'mdless'
 gem 'rake'
 
