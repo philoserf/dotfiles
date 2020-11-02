@@ -1,31 +1,13 @@
-# frozen_string_literal: true
-
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask'
 tap 'homebrew/services'
-
-tap 'atombender/ktail'
-tap 'aybabtme/tap'
-tap 'boz/repo'
-tap 'cjbassi/gotop'
-tap 'derailed/popeye'
-tap 'gabrie30/utils'
-tap 'go-task/tap'
-tap 'golangci/tap'
-tap 'goodwithtech/dockle'
-tap 'instrumenta/instrumenta'
-tap 'mveritym/mel'
-tap 'nektos/tap'
-tap 'rs/tap'
-tap 'tanishiking/jpp'
-tap 'wagoodman/dive'
-tap 'zaquestion/tap'
 
 brew 'antigen'
 brew 'asciinema'
 brew 'aspell'
 brew 'aws-iam-authenticator'
 brew 'awscli'
+brew 'bat'
 brew 'black'
 brew 'cfssl'
 brew 'coreutils'
@@ -121,23 +103,64 @@ brew 'zsh-completions'
 brew 'zsh-lovers'
 brew 'zsh'
 
+tap 'atombender/ktail'
 brew 'atombender/ktail/ktail'
+
+tap 'aybabtme/tap'
 brew 'aybabtme/tap/humanlog'
+
+tap 'boz/repo'
 brew 'boz/repo/kail'
+
+tap 'cjbassi/gotop'
 brew 'cjbassi/gotop/gotop'
+
+tap 'derailed/popeye'
 brew 'derailed/popeye/popeye'
+
+tap 'gabrie30/utils'
 brew 'gabrie30/utils/ghorg'
+
+tap 'go-task/tap'
 brew 'go-task/tap/go-task'
+
+tap 'golangci/tap'
 brew 'golangci/tap/golangci-lint'
+
+tap 'goodwithtech/dockle'
 brew 'goodwithtech/dockle/dockle'
+
+tap 'hashicorp/tap'
+brew 'hashicorp/tap/consul'
+brew 'hashicorp/tap/nomad'
+brew 'hashicorp/tap/packer'
+brew 'hashicorp/tap/vault'
+brew 'hashicorp/tap/waypoint'
+
+tap 'instrumenta/instrumenta'
 brew 'instrumenta/instrumenta/kubeval'
+
+tap 'mveritym/mel'
 brew 'mveritym/mel/kubedecode'
+
+tap 'nektos/tap'
 brew 'nektos/tap/act'
+
+tap 'rs/tap'
 brew 'rs/tap/jaggr'
 brew 'rs/tap/jplot'
+
+tap 'tanishiking/jpp'
 brew 'tanishiking/jpp/jpp'
+
+tap 'wagoodman/dive'
 brew 'wagoodman/dive/dive'
+
+tap 'zaquestion/tap'
 brew 'zaquestion/tap/lab'
+
+tap 'xwmx/taps'
+brew 'xwmx/taps/nb'
 
 cask 'alfred'
 cask 'bibdesk'
@@ -175,6 +198,7 @@ cask 'logos'
 cask 'mactex'
 cask 'marked'
 cask 'onyx'
+cask 'openvpn-connect'
 cask 'osxfuse'
 cask 'paparazzi'
 cask 'scapple'
