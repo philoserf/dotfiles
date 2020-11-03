@@ -15,7 +15,6 @@ tasks:
     desc: apps
     cmds:
       - task: update
-      - task: upgrade
       - task: verify
   rubies:
     desc: rubies
@@ -33,12 +32,7 @@ tasks:
   update:
     desc: update
     cmds:
-      - brew update
-  upgrade:
-    desc: upgrade
-    cmds:
-      - brew upgrade
-      - brew upgrade --cask
+      - brew bundle install --global
   verify:
     desc: verify
     cmds:
