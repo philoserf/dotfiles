@@ -70,7 +70,6 @@
 	"java.configuration.checkProjectSettingsExclusions": false,
 	"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
 	"nexusExplorer.dataSource": "iqServer",
-	"nexusiq.password": "ThisIsThePlace",
 	"nexusiq.url": "https://nexusiq.subsplash.net:8070",
 	"nexusiq.username": "mark.ayers",
 	"nginx-conf-hint.syntax": "sublime",

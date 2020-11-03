@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-=======
-# Copyright 2020 by Mark Ayers
 # frozen_string_literal: true
 
->>>>>>> Stashed changes
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask'
 tap 'homebrew/services'
