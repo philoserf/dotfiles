@@ -8,14 +8,24 @@ tasks:
   all:
     desc: all
     cmds:
-      - task: apps
+      - task: update
+      - task: check
       - task: rubies
       - task: system
-  apps:
-    desc: apps
+
+  update:
+    desc: update
     cmds:
-      - task: update
-      - task: verify
+      - brew bundle install --global
+  check:
+    desc: check
+    cmds:
+      - brew bundle cleanup --global
+  clean:
+    desc: clean
+    cmds:
+      - brew bundle cleanup --global --force
+
   rubies:
     desc: rubies
     cmds:
@@ -24,37 +34,8 @@ tasks:
       - bundle update --ruby --bundler
       - bundle clean --force
       - rbenv rehash
+
   system:
     desc: system
     cmds:
       - softwareupdate --install --all
-
-  update:
-    desc: update
-    cmds:
-      - brew bundle install --global
-  verify:
-    desc: verify
-    cmds:
-      - brew bundle check --global
-      - brew bundle cleanup --global
-  check:
-    desc: check
-    cmds:
-      - brew bundle dump --force
-      - sort ~/.Brewfile -o plan.tmp
-      - sort Brewfile -o real.tmp
-      - icdiff plan.tmp real.tmp
-      - rm Brewfile plan.tmp real.tmp
-  clean:
-    desc: clean
-    cmds:
-      - brew bundle cleanup --global --force
-  install:
-    desc: install
-    cmds:
-      - brew bundle install --global
-  brewfile:
-    desc: brewfile
-    cmds:
-      - brew bundle dump --global --force
