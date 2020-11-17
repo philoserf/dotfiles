@@ -1,4 +1,0 @@
-jobs:
-  lint:
-    - name: shellcheck
-      uses: luizm/action-sh-checker@v0.1.9
