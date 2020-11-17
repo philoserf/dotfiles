@@ -1,4 +1,15 @@
+name: shellcheck
+on:
+  - pull_request
 jobs:
   lint:
-    - name: shellcheck
-      uses: luizm/action-sh-checker@v0.1.9
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: shellcheck
+        uses: luizm/action-sh-checker@v0.1.9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHFMT_OPTS: -s # It is posible to pass arguments to shftm
+        with:
+          sh_checker_comment: true
