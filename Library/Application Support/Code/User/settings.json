@@ -1,93 +1,79 @@
 {
-	"[dockerfile]": {
-		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[markdown]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[yaml]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"cloudcode.gke": {
-		"projectIds": [
-			"fbfk4pa73gppnwiwgfiowr8zyjjbed"
-		]
-	},
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.fontFamily": "Fira Code",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 14,
-	"editor.rulers": [
-		100,
-		120,
-		50,
-		72,
-		78,
-		80
-	],
-	"editor.suggestSelection": "first",
-	"files.associations": {
-		"Brewfile": "ruby",
-		".Brewfile": "ruby"
-	},
-	"files.eol": "\n",
-	"files.exclude": {
-		"**/.git": false
-	},
-	"git.autofetch": true,
-	"gitProjectManager.baseProjectsFolders": [
-		"$HOME/go/src",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.rulers": [
+    50,
+    72,
+    78,
+    80,
+    100,
+    120
+  ],
+  "files.associations": {
+    "Brewfile": "ruby",
+    ".Brewfile": "ruby"
+  },
+  "gitProjectManager.baseProjectsFolders": [
     "$HOME/source",
-    "$HOME/src"
-	],
-	"gitProjectManager.storeRepositoriesBetweenSessions": true,
-	"gitlab.instanceUrl": "https://subsplash.io",
-	"go.coverOnSave": true,
-	"go.coverOnSingleTest": true,
-	"go.coverOnSingleTestFile": true,
-	"go.coverageOptions": "showUncoveredCodeOnly",
-	"go.formatFlags": [
-		"-s"
-	],
-	"go.formatTool": "goimports",
-	"go.lintFlags": [
-		"--enable-all",
-		"--max-issues-per-linter=0",
-		"--max-same-issues=0",
-		"--tests"
-	],
-	"go.lintOnSave": "file",
-	"go.lintTool": "golangci-lint",
-	"java.configuration.checkProjectSettingsExclusions": false,
-	"java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication",
-	"nexusExplorer.dataSource": "iqServer",
-	"nexusiq.url": "https://nexusiq.subsplash.net:8070",
-	"nexusiq.username": "mark.ayers",
-	"nginx-conf-hint.syntax": "sublime",
-	"search.useGlobalIgnoreFiles": true,
-	"sync.autoDownload": true,
-	"sync.autoUpload": true,
-	"sync.forceUpload": true,
-	"sync.gist": "b47e21278cb625602aca9f7680b56c6a",
-	"sync.quietSync": false,
-	"terminal.external.osxExec": "Hyper.app",
-	"terminal.integrated.fontFamily": "Fira Code",
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.scrollback": 10000,
-	"todo-tree.highlights.enabled": true,
-	"todo-tree.tree.filterCaseSensitive": true,
-	"todo-tree.tree.showScanModeButton": false,
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"window.zoomLevel": 0,
-	"workbench.colorTheme": "Material Theme",
-	"workbench.startupEditor": "newUntitledFile"
+  ],
+  "go.lintFlags": [
+    "--enable-all",
+    "--max-issues-per-linter=0",
+    "--max-same-issues=0",
+    "--tests"
+  ],
+  "go.lintOnSave": "file",
+  "go.lintTool": "golangci-lint",
+  "terminal.external.osxExec": "Hyper.app",
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.scrollback": 10000,
+  "workbench.colorTheme": "Material Theme",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.validate": false,
+  "aws.profile": "profile:default",
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.helm-path.mac": "/Users/markayers/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+    "vs-kubernetes.minikube-path.mac": "/Users/markayers/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vs-kubernetes.kubectl-path.mac": "/Users/markayers/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.draft-path.mac": "/Users/markayers/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.startupEditor": "newUntitledFile"
 }
