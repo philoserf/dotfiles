@@ -11,6 +11,7 @@ tasks:
       - task: update
       - task: check
       - task: rubies
+      - task: python
       - task: system
 
   update:
@@ -34,6 +35,11 @@ tasks:
       - bundle update --ruby --bundler
       - bundle clean --force
       - rbenv rehash
+
+  python:
+    desc: python
+    cmds:
+      - pyenv update
 
   system:
     desc: system

@@ -3,7 +3,7 @@ module.exports = {
         updateChannel: "stable",
         fontSize: 14,
         fontFamily:
-            '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+            '"Cascadia Code", "Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: "normal",
         fontWeightBold: "bold",
         lineHeight: 1,

@@ -33,6 +33,7 @@ done
 
 [[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
 [[ ${commands[helm]} ]] && source <(helm completion zsh)
+[[ ${commands[helm]} ]] && source <(eksctl completion zsh)
 [[ ${commands[direnv]} ]] && source <(direnv hook zsh)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)

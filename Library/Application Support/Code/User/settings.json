@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.rulers": [50, 72, 78, 80, 100, 120],
@@ -17,8 +17,8 @@
   "go.lintOnSave": "file",
   "go.lintTool": "golangci-lint",
   "terminal.external.osxExec": "Hyper.app",
-  "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Cascadia Code",
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.scrollback": 10000,
   "workbench.colorTheme": "Material Theme",
   "yaml.customTags": [
@@ -66,5 +66,6 @@
     "vs-kubernetes.draft-path.mac": "/Users/markayers/.vs-kubernetes/tools/draft/darwin-amd64/draft"
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0
 }
