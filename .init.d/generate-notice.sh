@@ -2,25 +2,25 @@
 
 generate-notice() {
 
-	START_YEAR=$(git show --quiet "$(git rev-list --max-parents=0 HEAD)" --format="format:%ad" --date="format:%Y" | sort | head -1)
-	END_YEAR=$(git show --quiet HEAD --format="format:%ad" --date="format:%Y" | sort -r | head -1)
+  START_YEAR=$(git show --quiet "$(git rev-list --max-parents=0 HEAD)" --format="format:%ad" --date="format:%Y" | sort | head -1)
+  END_YEAR=$(git show --quiet HEAD --format="format:%ad" --date="format:%Y" | sort -r | head -1)
 
-	function abort() {
-		echo "$@" >&2
-		exit 1
-	}
+  function abort() {
+    echo "$@" >&2
+    exit 1
+  }
 
-	[ -z "$START_YEAR" ] && abort "failed to determine start date"
-	[ -z "$END_YEAR" ] && abort "failed to determine end date"
+  [ -z "$START_YEAR" ] && abort "failed to determine start date"
+  [ -z "$END_YEAR" ] && abort "failed to determine end date"
 
-	RANGE=""
-	if [ "$START_YEAR" = "$END_YEAR" ]; then
-		RANGE="$START_YEAR"
-	else
-		RANGE="${START_YEAR}-${END_YEAR}"
-	fi
+  RANGE=""
+  if [ "$START_YEAR" = "$END_YEAR" ]; then
+    RANGE="$START_YEAR"
+  else
+    RANGE="${START_YEAR}-${END_YEAR}"
+  fi
 
-	cat >LICENSE <<EOF
+  cat >LICENSE <<EOF
 Copyright $RANGE Mark Ayers
 
 This is free and unencumbered software released into the public domain.

@@ -2,21 +2,12 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
-  "editor.rulers": [
-    50,
-    72,
-    78,
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [50, 72, 78, 80, 100, 120],
   "files.associations": {
     "Brewfile": "ruby",
     ".Brewfile": "ruby"
   },
-  "gitProjectManager.baseProjectsFolders": [
-    "$HOME/source",
-  ],
+  "gitProjectManager.baseProjectsFolders": ["$HOME/source"],
   "go.lintFlags": [
     "--enable-all",
     "--max-issues-per-linter=0",

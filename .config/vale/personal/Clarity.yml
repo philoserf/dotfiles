@@ -1,5 +1,5 @@
 extends: substitution
-message: '%s'
+message: "%s"
 level: warning
 ignorecase: true
 swap:

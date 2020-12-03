@@ -18,7 +18,7 @@ with_namespace() {
   printf "\n\nNamespaced\n=========="
   resource_count=$(($(kubectl api-resources --namespaced | wc -l) - 1))
   for resource in $(kubectl api-resources --namespaced | awk '{print $1}' | tail -n $resource_count | sort -u); do
-    [[ "$resource" == "events" ]] && continue
+    [[ $resource == "events" ]] && continue
     printf "\n\nChecking %s...\n" "$resource"
     kubectl get "$resource" --all-namespaces
   done
