@@ -51,7 +51,6 @@
     "!Split sequence"
   ],
   "yaml.validate": false,
-  "aws.profile": "profile:default",
   "extensions.showRecommendationsOnlyOnDemand": true,
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
