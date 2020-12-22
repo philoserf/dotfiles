@@ -1,9 +1,10 @@
 module.exports = {
     config: {
         updateChannel: "stable",
-        fontSize: 14,
+        fontSize: 16,
         fontFamily:
-            '"Cascadia Code", "Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+            // '"OpenDyslexic Nerd Font Mono Regular", monospace',
+            '"Cascadia Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: "normal",
         fontWeightBold: "bold",
         lineHeight: 1,

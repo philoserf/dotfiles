@@ -16,7 +16,6 @@ antigen bundle ssh-agent
 antigen bundle zsh_reload
 
 antigen bundle djui/alias-tips
-antigen bundle nojhan/liquidprompt
 antigen bundle zsh-users/zsh-apple-touchbar
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
@@ -31,10 +30,20 @@ for folder in secrets.d init.d; do
 	done
 done
 
-[[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
-[[ ${commands[helm]} ]] && source <(helm completion zsh)
-[[ ${commands[helm]} ]] && source <(eksctl completion zsh)
+[[ ${commands[starship]} ]] &&source <(starship init zsh)
+
 [[ ${commands[direnv]} ]] && source <(direnv hook zsh)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
 [[ ${commands[rbenv]} ]] && source <(rbenv init -)
-[[ ${commands[jenv]} ]] && source <(jenv init -)
+
+[[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
+[[ ${commands[helm]} ]] && source <(helm completion zsh)
+[[ ${commands[eksctl]} ]] && source <(eksctl completion zsh)
+[[ ${commands[flux]} ]] && source <(flux completion zsh)
+
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ls='ls -A'
+alias l='ls -lh'
+

@@ -69,5 +69,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0,
   "git.autofetch": true,
-  "projectManager.git.baseFolders": ["~/source"]
+  "projectManager.git.baseFolders": [
+    "~/source"
+  ],
+  "python.pythonPath": "/usr/local/bin/python3"
 }
