@@ -72,5 +72,8 @@
   "projectManager.git.baseFolders": [
     "~/source"
   ],
-  "python.pythonPath": "/usr/local/bin/python3"
+  "python.pythonPath": "/usr/local/bin/python3",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
