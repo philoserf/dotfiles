@@ -1,0 +1,12 @@
+start_directory: ~/
+windows:
+  - layout: ec8c,220x75,0,0[220x15,0,0,0,220x15,0,0,0,220x15,0,0,0,220x10,0,0,0,220x17,0,0,0]
+    window_name: k8s monitor
+    panes:
+      - watch 'kubectl get hpa -A --sort-by=status.currentReplicas|tail'
+      - ktail -l app=cluster-autoscaler
+      - kubectl get events --watch --all-namespaces
+      - watch 'kubectl get pods --all-namespaces|grep -v -e Running -e Complete'
+      - shell_command:
+          - ""
+        focus: true
