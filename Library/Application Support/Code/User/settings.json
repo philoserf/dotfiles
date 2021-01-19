@@ -75,5 +75,6 @@
   "python.pythonPath": "/usr/local/bin/python3",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  }
+  },
+  "hadolint.hadolintPath": "/usr/local/bin/hadolint"
 }

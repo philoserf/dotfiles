@@ -232,7 +232,13 @@ brew 'arp-scan'
 brew 'nmap'
 brew 'tfsec'
 brew 'tmux'
+brew 'loki'
+brew 'node_exporter'
+brew 'osx-cpu-temp'
+brew 'prometheus'
+brew 'telegraf'
 
+tap 'eddieantonio/eddieantonio'
 brew 'eddieantonio/eddieantonio/imgcat'
 
 cask 'angry-ip-scanner'
