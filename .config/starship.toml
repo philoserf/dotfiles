@@ -1,66 +1,23 @@
 # configuration
-[directory]
-truncation_length = 5
-truncation_symbol = "…/"
-[line_break]
-disabled = true
+format = """\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $kubernetes\
+  $cmd_duration\
+  $jobs\
+  $shlvl\
+  $directory\
+  $status\
+  $character\
+  """
 
-# turn on
+[directory]
+truncation_symbol = "…/"
 [kubernetes]
-disabled = true
-[memory_usage]
-disabled = true
+disabled = false
 [shlvl]
 disabled = false
 [status]
 disabled = false
-
-# turn off
-[aws]
-disabled = true
-[conda]
-disabled = true
-[crystal]
-disabled = true
-[dart]
-disabled = true
-[dotnet]
-disabled = true
-[gcloud]
-disabled = true
-[elixer]
-disabled = true
-[elm]
-disabled = true
-[erlang]
-disabled = true
-[java]
-disabled = true
-[julia]
-disabled = true
-[lua]
-disabled = true
-[nim]
-disabled = true
-[nodejs]
-disabled = true
-[ocaml]
-disabled = true
-[openstack]
-disabled = true
-[perl]
-disabled = true
-[php]
-disabled = true
-[purescript]
-disabled = true
-[python]
-disabled = true
-[ruby]
-disabled = true
-[rust]
-disabled = true
-[swift]
-disabled = true
-[zig]
-disabled = true

@@ -3,34 +3,41 @@
 # load order 2
 # shellcheck disable=SC2148,SC1090,SC1091,SC2154
 
-source /usr/local/share/antigen/antigen.zsh
+source "${HOME}/.zgen/zgen.zsh"
 
-antigen use oh-my-zsh
+zgen oh-my-zsh
 
-antigen bundle kubectl
-antigen bundle helm
-antigen bundle rbenv
-antigen bundle direnv
-antigen bundle ripgrep
-antigen bundle ssh-agent
-antigen bundle zsh_reload
+zgen oh-my-zsh plugins/kubectl
+zgen oh-my-zsh plugins/helm
+zgen oh-my-zsh plugins/rbenv
+zgen oh-my-zsh plugins/direnv
+zgen oh-my-zsh plugins/ripgrep
+zgen oh-my-zsh plugins/ssh-agent
+zgen oh-my-zsh plugins/zsh_reload
 
-antigen bundle djui/alias-tips
-antigen bundle zsh-users/zsh-apple-touchbar
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-syntax-highlighting
+zgen loadall <<PLUGINS
+  chrissicool/zsh-256color
+  djui/alias-tips
+  unixorn/autoupdate-zgen
+  unixorn/fzf-zsh-plugin
+  unixorn/git-extra-commands
+  unixorn/kubectx-zshplugin
+  zsh-users/zsh-apple-touchbar
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  zsh-users/zsh-history-substring-search
+  zsh-users/zsh-syntax-highlighting
+PLUGINS
 
-antigen apply
+# zgen save >/dev/null 2>&1
 
 for folder in secrets.d init.d; do
-	for filename in "$HOME/.$folder"/*; do
-		source "$filename"
-	done
+  for filename in "$HOME/.$folder"/*; do
+    source "$filename"
+  done
 done
 
-[[ ${commands[starship]} ]] &&source <(starship init zsh)
+[[ ${commands[starship]} ]] && source <(starship init zsh)
 
 [[ ${commands[direnv]} ]] && source <(direnv hook zsh)
 [[ ${commands[pyenv]} ]] && source <(pyenv init -)
@@ -46,4 +53,3 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ls='ls -A'
 alias l='ls -lh'
-

@@ -4,7 +4,7 @@ module.exports = {
         fontSize: 16,
         fontFamily:
             // '"OpenDyslexic Nerd Font Mono Regular", monospace',
-            '"Cascadia Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+            '"Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         fontWeight: "normal",
         fontWeightBold: "bold",
         lineHeight: 1,
@@ -50,6 +50,18 @@ module.exports = {
         quickEdit: false,
         macOptionSelectionMode: "vertical",
         webGLRenderer: true,
+        hyperline: {
+            plugins: [
+                "hostname",
+                "ip",
+                "memory",
+                "cpu",
+                "network",
+                "battery",
+                "time",
+                "docker",
+            ],
+        },
     },
     plugins: [
         "hypercwd",
@@ -57,8 +69,6 @@ module.exports = {
         "hyper-pane",
         "hyperinator",
         "hyper-search",
-        "hyper-statusline",
-        "hyper-autoprofile",
         "hyper-material-theme",
     ],
     localPlugins: [],

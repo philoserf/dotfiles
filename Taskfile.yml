@@ -8,12 +8,12 @@ tasks:
   all:
     desc: all
     cmds:
-      - task: update
+      - task: bundle
       - task: check
       - task: rubies
       - task: system
 
-  update:
+  bundle:
     desc: update
     cmds:
       - brew bundle install --global

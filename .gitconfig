@@ -1,6 +1,7 @@
 [user]
 name = Mark Ayers
-email = mark.ayers@subsplash.com
+# email = mark.ayers@subsplash.com
+email = mark@philoserf.com
 initials = ma
 
 [credential]
@@ -93,3 +94,5 @@ cc = "!git code-changes"
 
 [url "git@subsplash.io:"]
 insteadOf = https://subsplash.io/
+[pull]
+	ff = only
