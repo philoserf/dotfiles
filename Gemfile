@@ -16,4 +16,5 @@ group :ruby_development do
   gem 'rubocop-minitest'
   gem 'rubocop-performance'
   gem 'rubocop-rake'
+  gem 'rufo'
 end
