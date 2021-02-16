@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
@@ -76,3 +77,132 @@
   },
   "hadolint.hadolintPath": "/usr/local/bin/hadolint"
 }
+=======
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "svipas.prettier-plus"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.rulers": [
+		50,
+		72,
+		78,
+		80,
+		100,
+		120
+	],
+	"extensions.ignoreRecommendations": true,
+	"files.associations": {
+		"Brewfile": "ruby",
+		".Brewfile": "ruby",
+		".yamllint": "yaml",
+		"bootstrap": "shellscript"
+	},
+	"git.autofetch": true,
+	"gitProjectManager.baseProjectsFolders": [
+		"$HOME/source"
+	],
+	"go.coverOnSave": true,
+	"go.coverOnSingleTest": true,
+	"go.coverOnSingleTestFile": true,
+	"go.coverShowCounts": true,
+	"go.formatTool": "gofumpt",
+	"go.lintFlags": [
+		"--enable-all",
+		"--max-issues-per-linter=0",
+		"--max-same-issues=0",
+		"--tests",
+		"--sort-results",
+		"--fix",
+		"--allow-parallel-runners",
+		"--disable forbidigo"
+	],
+	"go.lintOnSave": "workspace",
+	"go.lintTool": "golangci-lint",
+	"go.useLanguageServer": true,
+	"gopls": {
+		"gofumpt": true
+	},
+	"hadolint.hadolintPath": "/usr/local/bin/hadolint",
+	"projectManager.git.baseFolders": [
+		"~/source"
+	],
+	"python.pythonPath": "/usr/local/bin/python3",
+	"python.showStartPage": false,
+	"search.exclude": {
+		"vendor/**": true
+	},
+	"search.seedOnFocus": true,
+	"search.seedWithNearestWord": true,
+	"search.useGlobalIgnoreFiles": true,
+	"terminal.external.osxExec": "Hyper.app",
+	"terminal.integrated.fontSize": 16,
+	"terminal.integrated.scrollback": 10000,
+	"vs-kubernetes": {
+		"vs-kubernetes.helm-path.mac": "/Users/markayers/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+		"vs-kubernetes.minikube-path.mac": "/Users/markayers/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+		"vs-kubernetes.kubectl-path.mac": "/Users/markayers/.vs-kubernetes/tools/kubectl/kubectl",
+		"vs-kubernetes.draft-path.mac": "/Users/markayers/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+	},
+	"window.zoomLevel": 0,
+	"workbench.colorTheme": "Material Theme",
+	"workbench.startupEditor": "newUntitledFile",
+	"yaml.customTags": [
+		"!And",
+		"!And sequence",
+		"!If",
+		"!If sequence",
+		"!Not",
+		"!Not sequence",
+		"!Equals",
+		"!Equals sequence",
+		"!Or",
+		"!Or sequence",
+		"!FindInMap",
+		"!FindInMap sequence",
+		"!Base64",
+		"!Join",
+		"!Join sequence",
+		"!Cidr",
+		"!Ref",
+		"!Sub",
+		"!Sub sequence",
+		"!GetAtt",
+		"!GetAZs",
+		"!ImportValue",
+		"!ImportValue sequence",
+		"!Select",
+		"!Select sequence",
+		"!Split",
+		"!Split sequence"
+	],
+	"yaml.validate": false,
+	"[markdown]": {
+		"editor.defaultFormatter": "svipas.prettier-plus"
+	},
+	"python.languageServer": "Pylance",
+	"terminal.integrated.fontFamily": "Fira Code",
+	"editor.codeLensFontFamily": "Fira Code",
+	"workbench.fontAliasing": "auto",
+	"[ruby]": {
+		"editor.defaultFormatter": "svipas.prettier-plus"
+	}
+}
+>>>>>>> fe9c564 (Misc updates)
