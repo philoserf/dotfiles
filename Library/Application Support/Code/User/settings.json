@@ -9,7 +9,7 @@
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "svipas.prettier-plus"
 	},
 	"[sql]": {
 		"editor.defaultFormatter": "adpyke.vscode-sql-formatter"
@@ -32,7 +32,9 @@
 	"extensions.ignoreRecommendations": true,
 	"files.associations": {
 		"Brewfile": "ruby",
-		".Brewfile": "ruby"
+		".Brewfile": "ruby",
+		".yamllint": "yaml",
+		"bootstrap": "shellscript"
 	},
 	"git.autofetch": true,
 	"gitProjectManager.baseProjectsFolders": [
@@ -119,5 +121,8 @@
 	"python.languageServer": "Pylance",
 	"terminal.integrated.fontFamily": "Fira Code",
 	"editor.codeLensFontFamily": "Fira Code",
-	"workbench.fontAliasing": "auto"
+	"workbench.fontAliasing": "auto",
+	"[ruby]": {
+		"editor.defaultFormatter": "svipas.prettier-plus"
+	}
 }

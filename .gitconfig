@@ -17,14 +17,14 @@ template = ~/.gitmessage
 [push]
 default = current
 
+[pull]
+ff = only
+
 [interactive]
 singlekey = true
 
 [diff]
 tool = default-difftool
-
-[diff "sopsdiffer"]
-textconv = sops -d
 
 [difftool "default-difftool"]
 cmd = code --wait --diff $LOCAL $REMOTE
@@ -40,10 +40,10 @@ br = branch
 ci = commit
 cl = clone
 co = checkout
-cm = checkout master
+cm = checkout main
+cmm = checkout main
 
-fa = fetch --all --tags --prune --prune-tags --recurse-submodules
-pa = pull --rebase
+fa = fetch ---all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
 up = pull --rebase --autostash --prune
 
 x1 = reflog expire --expire=now --all
@@ -54,7 +54,7 @@ ignored = ls-files --others
 amend = commit --amend
 same = commit --amend --no-edit
 please = push --force-with-lease
-cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\gh-pages' | xargs -n 1 git branch -d"
+cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main\\|develop\\gh-pages' | xargs -n 1 git branch -d"
 
 dc = diff --cached
 dlc = diff --cached HEAD^
@@ -92,5 +92,3 @@ cc = "!git code-changes"
 
 [url "git@subsplash.io:"]
 insteadOf = https://subsplash.io/
-[pull]
-	ff = only

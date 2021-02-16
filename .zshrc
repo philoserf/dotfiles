@@ -21,9 +21,9 @@ autoload run-help
 ulimit -n 8192
 
 if [[ -n $SSH_CONNECTION ]]; then
-	export EDITOR='vim'
+  export EDITOR='vim'
 else
-	export EDITOR='code --wait --new-window'
+  export EDITOR='code --wait --new-window'
 fi
 
 unalias run-help

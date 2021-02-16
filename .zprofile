@@ -29,7 +29,7 @@ zgen loadall <<PLUGINS
   zsh-users/zsh-syntax-highlighting
 PLUGINS
 
-# zgen save >/dev/null 2>&1
+zgen save >/dev/null 2>&1
 
 for folder in secrets.d init.d; do
   for filename in "$HOME/.$folder"/*; do
@@ -47,6 +47,8 @@ done
 [[ ${commands[helm]} ]] && source <(helm completion zsh)
 [[ ${commands[eksctl]} ]] && source <(eksctl completion zsh)
 [[ ${commands[flux]} ]] && source <(flux completion zsh)
+
+[[ ${commands[flux]} ]] && source <(gh completion -s zsh)
 
 alias rm='rm -i'
 alias mv='mv -i'

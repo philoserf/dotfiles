@@ -1,1 +1,6 @@
-// Empty
+[
+  {
+    "key": "shift+cmd+/",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
+]
