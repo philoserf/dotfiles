@@ -17,11 +17,21 @@ repository:
 
 labels:
   - name: bug
-    color: "#CC0000"
-    description: old brokenness
-  - name: feature
-    color: "#336699"
-    description: new hotness
+    description: An unexpected problem or unintended behavior
+  - name: documentation
+    description: A need for improvements or additions to documentation
+  - name: duplicate
+    description: Similar to another issues or pull requests
+  - name: enhancement
+    description: New feature requests
+  - name: invalid
+    description: An issue or pull request is no longer relevant
+  - name: question
+    description: An issue or pull request needs more information
+  - name: wontfix
+    description: Work won't continue on an issue or pull request
+  - name: chore
+    description: Work unrelated to the core purpose
 
 branches:
   - name: main
