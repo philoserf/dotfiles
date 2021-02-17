@@ -1,10 +1,5 @@
 {
-<<<<<<< HEAD
-  "extends": ["config:base"]
-}
-=======
   "extends": [
     "config:base"
   ]
 }
->>>>>>> fe9c564 (Misc updates)
