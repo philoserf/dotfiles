@@ -1,0 +1,17 @@
+version = 1
+
+[[analyzers]]
+name = "ruby"
+enabled = true
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "secrets"
+enabled = true
+
+[[transformers]]
+name = "prettier"
+enabled = true
