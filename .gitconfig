@@ -75,9 +75,8 @@ rh1 = reset HEAD^ --hard
 rh2 = reset HEAD^^ --hard
 rho = reset --hard origin
 
-s = status
-st = status --short
-stb = status --short --branch
+st = status
+s = status --short --branch
 
 sa = stash apply
 sl = stash list
@@ -92,3 +91,7 @@ cc = "!git code-changes"
 
 [url "git@subsplash.io:"]
 insteadOf = https://subsplash.io/
+[init]
+defaultBranch = main
+[diff "sopsdiffer"]
+textconv = sops -d

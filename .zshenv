@@ -21,3 +21,35 @@ if [[ ${SHLVL} == 1 ]]; then
 fi
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+ssh-add ~/.ssh/id_rsa_mark_philoserf >/dev/null 2>&1
+
+autoload -Uz compinit && compinit -u
+FPATH=/usr/local/share/zsh/site-functions:$FPATH
+autoload -Uz bashcompinit && bashcompinit -u
+FPATH=/usr/local/etc/bash_completion.d:$FPATH
+
+[[ ${commands[starship]} ]] && source <(starship init zsh)
+
+[[ ${commands[direnv]} ]] && source <(direnv hook zsh)
+[[ ${commands[pyenv]} ]] && source <(pyenv init -)
+[[ ${commands[rbenv]} ]] && source <(rbenv init -)
+
+[[ ${commands[kubectl]} ]] && source <(kubectl completion zsh)
+[[ ${commands[helm]} ]] && source <(helm completion zsh)
+[[ ${commands[eksctl]} ]] && source <(eksctl completion zsh)
+[[ ${commands[flux]} ]] && source <(flux completion zsh)
+
+[[ ${commands[flux]} ]] && source <(gh completion -s zsh)
+
+for folder in secrets.d init.d; do
+  for filename in "$HOME/.$folder"/*; do
+    source "$filename"
+  done
+done
+
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ls='ls -A'
+alias l='ls -lh'

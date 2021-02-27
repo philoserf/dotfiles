@@ -9,6 +9,7 @@ tap 'aybabtme/tap'
 tap 'boz/repo'
 tap 'cjbassi/gotop'
 tap 'derailed/popeye'
+tap 'dwarvesf/tap'
 tap 'eddieantonio/eddieantonio'
 tap 'fluxcd/tap'
 tap 'go-task/tap'
@@ -150,6 +151,7 @@ brew 'trash'
 brew 'tree'
 brew 'vale'
 brew 'vegeta'
+brew 'whalebrew'
 brew 'watch'
 brew 'watchman'
 brew 'wget'
@@ -186,15 +188,18 @@ brew 'zaquestion/tap/lab'
 
 cask 'alfred'
 cask 'angry-ip-scanner'
+cask 'autodnd'
 cask 'bibdesk'
+cask 'blurred'
 cask 'boinc'
 cask 'bunch'
 cask 'cardhop'
 cask 'cocoaspell'
 cask 'coconutbattery'
 cask 'controlplane'
-cask 'diaspora'
+cask 'discord'
 cask 'docker'
+cask 'dozer'
 cask 'drawio'
 cask 'fantastical'
 cask 'fliqlo'
@@ -245,21 +250,26 @@ cask 'zenmap'
 cask 'zoom'
 
 mas 'Amphetamine', id: 937984704
+mas 'Blurred', id: 1497527363
 mas 'Byword', id: 420212497
 mas 'Contacts+', id: 1094748271
 mas 'Drafts', id: 1435957248
 mas 'GoodLinks', id: 1474335294
 mas 'Grammarly for Safari', id: 1462114288
+mas 'Hidden Bar', id: 1452453066
 mas 'HP Smart', id: 1474276998
 mas 'iA Writer', id: 775737590
 mas 'Image2icon', id: 992115977
 mas 'Keynote', id: 409183694
+mas 'Micro Sniff', id: 1504024265
 mas 'Mindful Mynah', id: 503981565
 mas 'MindNode', id: 1289197285
 mas 'Name Mangler', id: 603637384
 mas 'Notability', id: 736189492
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
+mas 'Readify', id: 1513518320
+mas 'Session Pal', id: 1515213004
 mas 'Things', id: 904280696
 mas 'TripIt', id: 1475712010
 mas 'Xcode', id: 497799835

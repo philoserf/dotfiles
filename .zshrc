@@ -5,9 +5,11 @@
 
 HISTFILE="$HOME/.histfile"
 HISTCONTROL=ignorespace
-HISTSIZE=10000
-SAVEHIST=1000
-setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups histignorealldups histignoredups histignorespace histreduceblanks histsavenodups histverify incappendhistory sharehistory autocd nomatch
+HISTSIZE=1000
+SAVEHIST=10000
+setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups\
+ histignorealldups histignoredups histignorespace histreduceblanks \
+ histsavenodups histverify incappendhistory sharehistory autocd nomatch
 bindkey -e
 autoload -Uz compinit && compinit -u
 FPATH=/usr/local/share/zsh/site-functions:$FPATH
