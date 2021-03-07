@@ -6,33 +6,57 @@ tasks:
       - task: all
 
   all:
-    desc: all
+    desc: Run brew, ruby, python, & system updates
     cmds:
-      - task: bundle
-      - task: check
-      - task: rubies
+      - task: brew
+      - task: ruby
+      - task: python
       - task: system
 
-  bundle:
-    desc: update
+  all:check:
+    desc: Run brew:check
+    cmds:
+      - task: brew:check
+
+  all:clean:
+    desc: Run brew:clean, ruby:clean, python:clean
+    cmds:
+      - task: brew:clean
+      - task: ruby:clean
+      - task: python:clean
+
+  brew:
+    desc: Run brew bundle install --global
     cmds:
       - brew bundle install --global
-  check:
-    desc: check
+  brew:check:
+    desc: Run brew bundle cleanup --global
     cmds:
       - brew bundle cleanup --global
-  clean:
-    desc: clean
+  brew:clean:
+    desc: Run brew bundle cleanup --global --force
     cmds:
       - brew bundle cleanup --global --force
 
-  rubies:
-    desc: rubies
+  ruby:
+    desc: Run bundle update --ruby --bundler
     cmds:
       - bundle update --ruby --bundler
+  ruby:clean:
+    desc: Run bundle clean --force
+    cmds:
       - bundle clean --force
 
+  python:
+    desc: Run conda update --all --yes
+    cmds:
+      - conda update --all --yes
+  python:clean:
+    desc: Run conda clean --all --yes
+    cmds:
+      - conda clean --all --yes
+
   system:
-    desc: system
+    desc: Run softwareupdate --install --all
     cmds:
       - softwareupdate --install --all

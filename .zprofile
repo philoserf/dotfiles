@@ -8,10 +8,12 @@ source "${HOME}/.antigen/antigen.zsh"
 antigen use oh-my-zsh
 
 antigen bundles <<BUNDLES
-  kubectl
-  helm
-  rbenv
+  aws
   direnv
+  helm
+  history
+  kubectl
+  rbenv
   ripgrep
   ssh-agent
   zsh_reload
