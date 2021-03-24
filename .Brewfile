@@ -119,8 +119,6 @@ brew 'pandoc'
 brew 'parallel'
 brew 'pdftohtml'
 brew 'percona-toolkit'
-brew 'pipenv'
-brew 'prettier'
 brew 'prometheus'
 brew 'proselint'
 brew 'pstree'
@@ -135,7 +133,6 @@ brew 'shellcheck'
 brew 'shfmt'
 brew 'sonobuoy'
 brew 'sops'
-brew 'starship'
 brew 'telegraf'
 brew 'terraform_landscape'
 brew 'terraform-docs'
@@ -253,10 +250,7 @@ cask 'zoom'
 
 mas 'Amphetamine', id: 937984704
 mas 'Blurred', id: 1497527363
-mas 'Byword', id: 420212497
-mas 'Contacts+', id: 1094748271
 mas 'Drafts', id: 1435957248
-mas 'GoodLinks', id: 1474335294
 mas 'Grammarly for Safari', id: 1462114288
 mas 'Hidden Bar', id: 1452453066
 mas 'HP Smart', id: 1474276998
@@ -270,8 +264,5 @@ mas 'Name Mangler', id: 603637384
 mas 'Notability', id: 736189492
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
-mas 'Readify', id: 1513518320
-mas 'Session Pal', id: 1515213004
 mas 'Things', id: 904280696
-mas 'TripIt', id: 1475712010
 mas 'Xcode', id: 497799835
