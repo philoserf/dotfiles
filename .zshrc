@@ -5,7 +5,7 @@
 
 HISTFILE="$HOME/.histfile"
 HISTCONTROL=ignorespace
-HISTSIZE=1000
+HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups\
  histignorealldups histignoredups histignorespace histreduceblanks \

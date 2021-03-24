@@ -65,7 +65,6 @@ module.exports = {
     },
     plugins: [
         "hypercwd",
-        "hyperlinks",
         "hyper-pane",
         "hyperinator",
         "hyper-search",

@@ -29,4 +29,6 @@ antigen bundles <<BUNDLES
   zsh-users/zsh-syntax-highlighting
 BUNDLES
 
+antigen theme denysdovhan/spaceship-prompt
+
 antigen apply
