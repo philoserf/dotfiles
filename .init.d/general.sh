@@ -13,9 +13,6 @@ alias kgew='k get events --watch'
 alias kctx='kubectx'
 alias kns='kubens'
 
-alias ll="ls -FrtohpqGl"
-alias lla='ll -A'
-
 alias update='task --taskfile ${HOME}/Taskfile.yml'
 
 popd() { builtin popd "$@" >/dev/null; }
