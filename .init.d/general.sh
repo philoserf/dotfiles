@@ -19,4 +19,4 @@ popd() { builtin popd "$@" >/dev/null; }
 pushd() { builtin pushd "$@" >/dev/null; }
 
 # trial aliases or short functions
-alias ez='code $(yadm ls-files|grep -e "^\.z")'
+alias ez='pushd ${HOME};code $(yadm ls-files|grep -e "^\.z");popd'

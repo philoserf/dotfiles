@@ -11,6 +11,7 @@ tasks:
       - task: brew
       - task: ruby
       - task: python
+      - task: node
       - task: system
 
   all:check:
@@ -55,6 +56,11 @@ tasks:
     desc: Run conda clean --all --yes
     cmds:
       - conda clean --all --yes
+
+  node:
+    desc: Run npm -g update
+    cmds:
+      - npm -g update
 
   system:
     desc: Run softwareupdate --install --all
