@@ -22,4 +22,4 @@ for folder in secrets.d init.d; do
   done
 done
 
-[[ ${commands[exa]} ]] && alias ll='exa --classify --long --header --git --sort=modified --group-directories-first --time-style=long-iso --icons'
+[[ ${commands[exa]} ]] && alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git'
