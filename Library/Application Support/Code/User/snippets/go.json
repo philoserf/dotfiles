@@ -1,0 +1,26 @@
+{
+  "snippet-gtt": {
+    "prefix": "gtt",
+    "body": [
+      "package $1",
+      "",
+      "import $2_test",
+      "",
+      "func Test$3(t *testing.T) {",
+      "  tests := []struct {",
+      "    name string",
+      "    }{",
+      "    { \"TODO: add test cases\" },",
+      "  }",
+      "  for _, test := range tests {",
+      "     tt.Run(test.name, func(t *testing.T) {",
+      "       tt.Log(\"$4\")",
+      "       $5",
+      "     })",
+      "    }",
+      "}",
+      ""
+    ],
+    "description": "go table tests"
+  }
+}

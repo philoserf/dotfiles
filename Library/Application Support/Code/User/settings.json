@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.productIconTheme": "material-product-icons",
+    "tabnine.experimentalAutoImports": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 16,
+}

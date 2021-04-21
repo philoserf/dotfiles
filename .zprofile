@@ -21,7 +21,6 @@ antigen bundles <<BUNDLES
   chrissicool/zsh-256color
   djui/alias-tips
   unixorn/fzf-zsh-plugin
-  unixorn/git-extra-commands
   zsh-users/zsh-apple-touchbar
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions
