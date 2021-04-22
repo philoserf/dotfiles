@@ -17,4 +17,6 @@
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "terminal.integrated.fontSize": 16,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.sideBar.location": "right",
 }
