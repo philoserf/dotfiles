@@ -1,3 +1,9 @@
 # shellcheck disable=SC2148
 
 [[ -f "$HOME/.Brewfile" ]] && brew bundle --global
+
+cat << CADDYFILE>/usr/local/etc/Caddyfile
+localhost
+root * /Users/markayers/www
+file_server
+CADDYFILE
