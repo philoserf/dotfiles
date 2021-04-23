@@ -1,0 +1,6 @@
+[
+  {
+    "key": "ctrl+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
+]

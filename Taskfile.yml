@@ -1,0 +1,30 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: all
+
+  all:
+    desc: Run brew, and system updates
+    cmds:
+      - task: brew
+      - task: system
+
+  brew:
+    desc: Run brew bundle install --global
+    cmds:
+      - brew bundle install --global
+  brew:check:
+    desc: Run brew bundle cleanup --global
+    cmds:
+      - brew bundle cleanup --global
+  brew:clean:
+    desc: Run brew bundle cleanup --global --force
+    cmds:
+      - brew bundle cleanup --global --force
+
+  system:
+    desc: Run softwareupdate --install --all
+    cmds:
+      - softwareupdate --install --all
