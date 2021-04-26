@@ -1,21 +1,10 @@
 # load order 4 (login) after /etc/zprofile (exists)
 
-if [[ ${SHLVL} == 1 ]]; then
-  unset PATH
-  PATH="${HOME}/bin:${HOME}/go/bin:/usr/local/bin:/usr/bin:/bin"
-  PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
-  export PATH
-
-  MANPATH="/usr/local/man:${MANPATH}"
-  export MANPATH
-fi
-
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
 antigen bundles <<BUNDLES
-  direnv
   history
   ripgrep
   ssh-agent
@@ -34,5 +23,5 @@ antigen theme denysdovhan/spaceship-prompt
 
 antigen apply
 
-alias ll='exa --long --grid --icons --sort accessed --reverse --group-directories-first --git'
+alias ll='exa --long --grid --icons --sort accessed --group-directories-first --git'
 alias lla='ll --all'

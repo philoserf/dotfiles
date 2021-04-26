@@ -2,7 +2,6 @@
   "workbench.colorTheme": "GitHub Dark Dimmed",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "editor.fontFamily": "Hack",
   "editor.fontSize": 16,
   "sync.autoDownload": true,
   "sync.autoUpload": true,
@@ -15,13 +14,11 @@
     "dockerfile",
     "dotenv",
     "hosts",
-    "jvmoptions",
     "ignore",
     "gitignore",
-    "properties",
-    "spring-boot-properties",
-    "azcli"
+    "properties"
   ],
+"terminal.integrated.fontSize": 16,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -30,6 +27,5 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "terminal.integrated.fontSize": 16
+  }
 }

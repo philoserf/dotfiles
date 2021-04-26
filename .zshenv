@@ -7,13 +7,18 @@ export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export ZDOTDIR=${XDG_CONFIG_HOME}/zsh
 
-autoload -Uz compinit && compinit -u
-FPATH=/usr/local/share/zsh/site-functions:$FPATH
-autoload -Uz bashcompinit && bashcompinit -u
-FPATH=/usr/local/etc/bash_completion.d:$FPATH
+if [[ ${SHLVL} == 1 ]]; then
+  unset PATH
+  PATH="${HOME}/bin:${HOME}/go/bin"
+  PATH="${PATH}:/usr/local/opt/ruby/bin"
+  PATH="${PATH}:/usr/local/opt/python@3.9/libexec/bin"
+  PATH="${PATH}:/Library/TeX/texbin"
+  PATH="${PATH}:/usr/local/MacGPG2/bin"
+  # PATH="${PATH}:
+  PATH="${PATH}:/usr/local/bin:/usr/bin:/bin"
+  # PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
+  export PATH
 
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ls='ls -A'
-alias l='ls -lh'
+  MANPATH="/usr/local/man:${MANPATH}"
+  export MANPATH
+fi
