@@ -13,7 +13,6 @@ antigen bundles <<BUNDLES
   helm
   history
   kubectl
-  rbenv
   ripgrep
   ssh-agent
   zsh_reload

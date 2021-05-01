@@ -1,274 +1,217 @@
-tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/core'
-tap 'homebrew/services'
+tap "homebrew/core"
+tap "homebrew/bundle"
 
-tap 'atombender/ktail'
-tap 'aybabtme/tap'
-tap 'boz/repo'
-tap 'cjbassi/gotop'
-tap 'derailed/popeye'
-tap 'dwarvesf/tap'
-tap 'eddieantonio/eddieantonio'
-tap 'fluxcd/tap'
-tap 'go-task/tap'
-tap 'golangci/tap'
-tap 'goodwithtech/r'
-tap 'instrumenta/instrumenta'
-tap 'mveritym/mel'
-tap 'nektos/tap'
-tap 'profclems/tap'
-tap 'rs/tap'
-tap 'tanishiking/jpp'
-tap 'ubuntu/microk8s'
-tap 'wagoodman/dive'
-tap 'xwmx/taps'
-tap 'zaquestion/tap'
+brew "bash"
+brew "bash-completion"
+brew "zsh"
+brew "zsh-completions"
 
-brew 'act'
-brew 'ansible-lint'
-brew 'ansible'
-brew 'antigen'
-brew 'arp-scan'
-brew 'asciinema'
-brew 'aspell'
-brew 'aws-shell'
-brew 'awscli'
-brew 'awslogs'
-brew 'awsume'
-brew 'bat'
-brew 'bash'
-brew 'black'
-brew 'caddy', restart_service: true
-brew 'cfn-flip'
-brew 'cfn-format'
-brew 'cfn-lint'
-brew 'cfssl'
-brew 'coreutils'
-brew 'curl'
-brew 'curlie'
-brew 'diction'
-brew 'direnv'
-brew 'dive'
-brew 'dnstrace'
-brew 'docker-clean'
-brew 'dockle'
-brew 'dos2unix'
-brew 'duti'
-brew 'editorconfig'
-brew 'eksctl'
-brew 'envoy'
-brew 'exa'
-brew 'fd'
-brew 'fdupes'
-brew 'flux'
-brew 'fx'
-brew 'fzf'
-brew 'gh'
-brew 'ghostscript'
-brew 'gist'
-brew 'git-extras'
-brew 'git-lfs'
-brew 'git-quick-stats'
-brew 'git-sizer'
-brew 'git'
-brew 'gitup'
-brew 'glab'
-brew 'go-jira'
-brew 'go-task'
-brew 'go'
-brew 'golangci-lint'
-brew 'googler'
-brew 'gotop'
-brew 'grafana', restart_service: true
-brew 'graphviz'
-brew 'hadolint'
-brew 'helm'
-brew 'helmfile'
-brew 'highlight'
-brew 'hosts'
-brew 'htop'
-brew 'httpie'
-brew 'httping'
-brew 'httrack'
-brew 'hub'
-brew 'hugo'
-brew 'humanlog'
-brew 'hunspell'
-brew 'icdiff'
-brew 'imagemagick'
-brew 'imageoptim-cli'
-brew 'imgcat'
-brew 'influxdb'
-brew 'jaggr'
-brew 'jid'
-brew 'jpegoptim'
-brew 'jplot'
-brew 'jpp'
-brew 'jq'
-brew 'jsonlint'
-brew 'jsonpp'
-brew 'k6'
-brew 'kail'
-brew 'kind'
-brew 'krew'
-brew 'ktail'
-brew 'kube-linter'
-brew 'kubeaudit'
-brew 'kubectx'
-brew 'kubedecode'
-brew 'kubernetes-cli'
-brew 'kubeval'
-brew 'kustomize'
-brew 'lab'
-brew 'links'
-brew 'loki', restart_service: true
-brew 'm-cli'
-brew 'markdown'
-brew 'mas'
-brew 'masscan'
-brew 'microk8s'
-brew 'mkcert'
-brew 'mkdocs'
-brew 'mysql'
-brew 'nb'
-brew 'nginx'
-brew 'node_exporter', restart_service: true
-brew 'noti'
-brew 'octant'
-brew 'openapi-generator'
-brew 'optipng'
-brew 'osx-cpu-temp'
-brew 'osxutils'
-brew 'pandoc-crossref'
-brew 'pandoc'
-brew 'parallel'
-brew 'pb'
-brew 'pdftohtml'
-brew 'percona-toolkit'
-brew 'popeye'
-brew 'prometheus', restart_service: true
-brew 'promtail'
-brew 'proselint'
-brew 'pstree'
-brew 'pwgen'
-brew 'pyenv'
-brew 'rbenv'
-brew 'redis'
-brew 'restic'
-brew 'ripgrep'
-brew 'ruby'
-brew 'scc'
-brew 'shellcheck'
-brew 'shfmt'
-brew 'sonobuoy'
-brew 'sops'
-brew 'telegraf'
-brew 'terraform'
-brew 'tig'
-brew 'tflint'
-brew 'tfsec'
-brew 'tmux'
-brew 'trash'
-brew 'tree'
-brew 'vale'
-brew 'vegeta'
-brew 'watch'
-brew 'watchman'
-brew 'wget'
-brew 'whalebrew'
-brew 'yadm'
-brew 'yamllint'
-brew 'yarn'
-brew 'yuicompressor'
-brew 'zsh-completions'
-brew 'zsh-lovers'
-brew 'zsh'
+brew "node"
+brew "python"
+brew "ruby"
 
-cask 'alfred'
-cask 'angry-ip-scanner'
-cask 'autodnd'
-cask 'avg-antivirus'
-cask 'bibdesk'
-cask 'blurred'
-cask 'boinc'
-cask 'bunch'
-cask 'cardhop'
-cask 'cocoaspell'
-cask 'coconutbattery'
-cask 'controlplane'
-cask 'discord'
-cask 'docker'
-cask 'dozer'
-cask 'drawio'
-cask 'fantastical'
-cask 'fliqlo'
-cask 'font-fira-code'
-cask 'font-fira-code-nerd-font'
-cask 'font-input'
-cask 'font-open-dyslexic'
-cask 'google-cloud-sdk'
-cask 'gpg-suite-no-mail'
-cask 'grammarly'
-cask 'hazel'
-cask 'hyper'
-cask 'imageoptim'
-cask 'jira-client'
-cask 'karabiner-elements'
-cask 'kextviewr'
-cask 'keyboard-maestro'
-cask 'keycastr'
-cask 'keycue'
-cask 'kindle'
-cask 'launchcontrol'
-cask 'launchrocket'
-cask 'lens'
-cask 'logos'
-cask 'mactex'
-cask 'marked'
-cask 'miniconda'
-cask 'multipass'
-cask 'onyx'
-cask 'openvpn-connect'
-cask 'osxfuse'
-cask 'oversight'
-cask 'paparazzi'
-cask 'protonmail-bridge'
-cask 'protonvpn'
-cask 'scapple'
-cask 'screenflow'
-cask 'scrivener'
-cask 'shiftit'
-cask 'slack'
-cask 'swiftdefaultappsprefpane'
-cask 'thingsmacsandboxhelper'
-cask 'vellum'
-cask 'virtualbox-extension-pack'
-cask 'virtualbox'
-cask 'visual-studio-code'
-cask 'xbar'
-cask 'xquartz'
-cask 'zenmap'
-cask 'zoom'
+brew "go"
+brew "rust"
 
-mas 'Amphetamine', id: 937984704
-mas 'Blurred', id: 1497527363
-mas 'Drafts', id: 1435957248
-mas 'Grammarly for Safari', id: 1462114288
-mas 'Hidden Bar', id: 1452453066
-mas 'HP Smart', id: 1474276998
-mas 'iA Writer', id: 775737590
-mas 'Image2icon', id: 992115977
-mas 'Keynote', id: 409183694
-mas 'Micro Sniff', id: 1504024265
-mas 'Mindful Mynah', id: 503981565
-mas 'MindNode', id: 1289197285
-mas 'Name Mangler', id: 603637384
-mas 'Notability', id: 736189492
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Things', id: 904280696
-mas 'Xcode', id: 497799835
+brew "antigen"
+brew "asciinema"
+brew "aspell"
+brew "awscli"
+brew "cfssl"
+brew "coreutils"
+brew "curl"
+brew "diction"
+brew "direnv"
+brew "duti"
+brew "editorconfig"
+brew "eksctl"
+brew "envoy"
+brew "exa"
+brew "fd"
+brew "fdupes"
+brew "fzf"
+brew "jpeg"
+brew "gh"
+brew "ghostscript"
+brew "gist"
+brew "git"
+brew "git-extras"
+brew "git-quick-stats"
+brew "git-sizer"
+brew "gitup"
+brew "googler"
+brew "graphviz"
+brew "hadolint"
+brew "helm"
+brew "helmfile"
+brew "htop"
+brew "httpie"
+brew "httping"
+brew "httrack"
+brew "hub"
+brew "hugo"
+brew "hunspell"
+brew "imageoptim-cli"
+brew "protobuf"
+brew "influxdb"
+brew "jid"
+brew "jpegoptim"
+brew "jq"
+brew "jsonlint"
+brew "k6"
+brew "kind"
+brew "kubernetes-cli"
+brew "krew"
+brew "kubectx"
+brew "kustomize"
+brew "links"
+brew "m-cli"
+brew "multimarkdown"
+brew "mysql-client"
+brew "nmap"
+brew "noti"
+brew "openjdk"
+brew "optipng"
+brew "osx-cpu-temp"
+brew "osxutils"
+brew "pandoc"
+brew "pandoc-crossref"
+brew "parallel"
+brew "pdftohtml"
+brew "percona-toolkit"
+brew "promtail"
+brew "proselint"
+brew "pstree"
+brew "pwgen"
+brew "ripgrep"
+brew "shellcheck"
+brew "shfmt"
+brew "starship"
+brew "terraform"
+brew "tflint"
+brew "tfsec"
+brew "tig"
+brew "tmux"
+brew "trash"
+brew "tree"
+brew "vale"
+brew "vegeta"
+brew "watch"
+brew "watchman"
+brew "wget"
+brew "yadm"
+brew "yamllint"
 
-# trial
+tap "homebrew/services"
+brew "black"
+brew "caddy", restart_service: true
+brew "grafana", restart_service: true
+brew "loki", restart_service: true
+brew "mysql"
+brew "nginx"
+brew "node_exporter", restart_service: true
+brew "prometheus", restart_service: true
+brew "redis"
+brew "telegraf"
+
+tap "atombender/ktail"
+brew "atombender/ktail/ktail"
+
+tap "go-task/tap"
+brew "go-task/tap/go-task"
+
+tap "golangci/tap"
+brew "golangci/tap/golangci-lint"
+
+tap "instrumenta/instrumenta"
+brew "instrumenta/instrumenta/kubeval"
+
+tap "mveritym/mel"
+brew "mveritym/mel/kubedecode"
+
+tap "nektos/tap"
+brew "nektos/tap/act"
+
+tap "rs/tap"
+brew "rs/tap/curlie"
+brew "rs/tap/dnstrace"
+brew "rs/tap/jaggr"
+brew "rs/tap/jplot"
+
+tap "xwmx/taps"
+brew "xwmx/taps/hosts"
+brew "xwmx/taps/nb"
+brew "xwmx/taps/pb"
+
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+cask "alfred"
+cask "blurred"
+cask "boinc"
+cask "bunch"
+cask "cardhop"
+cask "cocoaspell"
+cask "coconutbattery"
+cask "controlplane"
+cask "discord"
+cask "docker"
+cask "fantastical"
+cask "fliqlo"
+cask "google-cloud-sdk"
+cask "gpg-suite-no-mail"
+cask "grammarly"
+cask "hazel"
+cask "hyper"
+cask "imageoptim"
+cask "karabiner-elements"
+cask "kextviewr"
+cask "keyboard-maestro"
+cask "keycastr"
+cask "keycue"
+cask "launchcontrol"
+cask "launchrocket"
+cask "lens"
+cask "mactex"
+cask "marked"
+cask "onyx"
+cask "osxfuse"
+cask "oversight"
+cask "paparazzi"
+cask "scapple"
+cask "screenflow"
+cask "shiftit"
+cask "slack"
+cask "thingsmacsandboxhelper"
+cask "tunnelblick"
+cask "vellum"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
+cask "visual-studio-code"
+cask "xquartz"
+cask "zoom"
+
+tap "homebrew/cask-fonts"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-input"
+cask "font-open-dyslexic"
+
+brew "mas"
+mas "Amphetamine", id: 937984704
+mas "Blurred", id: 1497527363
+mas "Drafts", id: 1435957248
+mas "Grammarly for Safari", id: 1462114288
+mas "Hidden Bar", id: 1452453066
+mas "HP Smart", id: 1474276998
+mas "iA Writer", id: 775737590
+mas "Image2icon", id: 992115977
+mas "Keynote", id: 409183694
+mas "Micro Sniff", id: 1504024265
+mas "Mindful Mynah", id: 503981565
+mas "MindNode", id: 1289197285
+mas "Name Mangler", id: 603637384
+mas "Notability", id: 736189492
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
