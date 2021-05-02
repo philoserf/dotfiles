@@ -12,11 +12,11 @@ if [[ ${SHLVL} == 1 ]]; then
   PATH="${HOME}/bin:${HOME}/go/bin"
   PATH="${PATH}:/usr/local/opt/ruby/bin"
   PATH="${PATH}:/usr/local/opt/python@3.9/libexec/bin"
-  PATH="${PATH}:/Library/TeX/texbin"
-  PATH="${PATH}:/usr/local/MacGPG2/bin"
   # PATH="${PATH}:
   PATH="${PATH}:/usr/local/bin:/usr/bin:/bin"
   PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
+  PATH="${PATH}:/Library/TeX/texbin"
+  PATH="${PATH}:/usr/local/MacGPG2/bin"
   export PATH
 
   MANPATH="/usr/local/man:${MANPATH}"

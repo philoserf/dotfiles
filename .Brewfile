@@ -1,26 +1,83 @@
 tap 'homebrew/core'
 tap 'homebrew/bundle'
+tap 'homebrew/cask'
 
-brew 'ruby'
-brew 'python'
-brew 'node'
+# modern languages maintained and up-to-date
+brew 'bash'
 brew 'go'
+brew 'node'
+brew 'python'
+brew 'ruby'
 brew 'rust'
+brew 'zsh'
 
+# extending my shell experience
+brew 'exa'
+brew 'fzf'
+
+# macOS essentials
+cask 'alfred'
+cask 'cardhop'
+cask 'fantastical'
+cask 'fliqlo'
+cask 'grammarly'
+cask 'hazel'
+cask 'hyper'
+cask 'karabiner-elements'
+cask 'keycastr'
+cask 'keycue'
+cask 'scapple'
+cask 'screenflow'
+cask 'shiftit'
+cask 'visual-studio-code'
+cask 'protonmail-bridge'
+cask 'protonvpn'
+cask 'thingsmacsandboxhelper'
+
+# services
 tap 'homebrew/services'
 brew 'caddy', restart_service: true
-brew 'nss'
-
+brew 'nss' # optional for Caddy
 brew 'grafana', restart_service: true
 brew 'node_exporter', restart_service: true
 brew 'loki', restart_service: true
 brew 'prometheus', restart_service: true
-
 brew 'mysql'
 brew 'nginx'
 brew 'redis'
 brew 'telegraf'
 
+# other tools
+tap 'xwmx/taps'
+brew 'xwmx/taps/nb'
+brew 'xwmx/taps/hosts'
+tap 'go-task/tap'
+brew 'go-task/tap/go-task'
+tap 'golangci/tap'
+brew 'golangci/tap/golangci-lint'
+tap 'homebrew/cask-fonts'
+cask 'font-open-dyslexic'
+cask 'font-hack'
+cask 'font-hack-nerd-font'
+
+mas 'Amphetamine', id: 937984704
+mas 'Blurred', id: 1497527363
+mas 'Drafts', id: 1435957248
+mas 'Grammarly for Safari', id: 1462114288
+mas 'Hidden Bar', id: 1452453066
+mas 'iA Writer', id: 775737590
+mas 'Image2icon', id: 992115977
+mas 'Keynote', id: 409183694
+mas 'Micro Sniff', id: 1504024265
+mas 'Mindful Mynah', id: 503981565
+mas 'MindNode', id: 1289197285
+mas 'Name Mangler', id: 603637384
+mas 'Notability', id: 360593530
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Things', id: 904280696
+
+# Unculled
 brew 'act'
 brew 'antigen'
 brew 'asciinema'
@@ -33,11 +90,9 @@ brew 'diction'
 brew 'direnv'
 brew 'duti'
 brew 'editorconfig'
-brew 'exa'
 brew 'fd'
 brew 'fdupes'
 brew 'fx'
-brew 'fzf'
 brew 'gh'
 brew 'ghostscript'
 brew 'gist'
@@ -117,26 +172,6 @@ brew 'whalebrew'
 brew 'yadm'
 brew 'yamllint'
 brew 'zsh-completions'
-brew 'zsh-lovers'
-brew 'zsh'
-
-tap 'go-task/tap'
-brew 'go-task/tap/go-task'
-
-tap 'golangci/tap'
-brew 'golangci/tap/golangci-lint'
-
-tap 'dwarvesf/tap'
-cask 'dwarvesf/tap/autodnd'
-
-tap 'xwmx/taps'
-brew 'xwmx/taps/nb'
-brew 'xwmx/taps/hosts'
-
-tap 'ubuntu/microk8s'
-brew 'ubuntu/microk8s/microk8s'
-
-tap 'homebrew/cask'
 
 cask 'alfred'
 cask 'blurred'
@@ -181,24 +216,3 @@ cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'xquartz'
 cask 'zoom'
-
-tap 'homebrew/cask-fonts'
-cask 'font-hack'
-cask 'font-hack-nerd-font'
-
-mas 'Amphetamine', id: 937984704
-mas 'Blurred', id: 1497527363
-mas 'Drafts', id: 1435957248
-mas 'Grammarly for Safari', id: 1462114288
-mas 'Hidden Bar', id: 1452453066
-mas 'iA Writer', id: 775737590
-mas 'Image2icon', id: 992115977
-mas 'Keynote', id: 409183694
-mas 'Micro Sniff', id: 1504024265
-mas 'Mindful Mynah', id: 503981565
-mas 'MindNode', id: 1289197285
-mas 'Name Mangler', id: 603637384
-mas 'Notability', id: 360593530
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Things', id: 904280696
