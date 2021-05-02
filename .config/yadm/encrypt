@@ -2,3 +2,4 @@
 .ssh/id_rsa
 .ssh/*.key
 .ssh/*.pub
+.aws/credentials

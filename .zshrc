@@ -7,9 +7,8 @@ HISTFILE="$HOME/.histfile"
 HISTCONTROL=ignorespace
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups\
- histignorealldups histignoredups histignorespace histreduceblanks \
- histsavenodups histverify incappendhistory sharehistory autocd nomatch
+setopt appendhistory extendedhistory histexpiredupsfirst histfindnodups histignorealldups histignoredups histignorespace histreduceblanks \
+  histsavenodups histverify incappendhistory sharehistory autocd nomatch
 bindkey -e
 autoload -Uz compinit && compinit -u
 FPATH=/usr/local/share/zsh/site-functions:$FPATH
@@ -31,16 +30,54 @@ fi
 unalias run-help
 autoload run-help
 alias help=run-help
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
+if type brew &>/dev/null; then
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/curl/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/icu4c/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/libffi/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/libxml2/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/mysql-client/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/ncurses/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/node@10/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/openjdk/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/openldap/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/openssl@1.1/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/readline/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/ruby/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/sqlite/include"
+  CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/tcl-tk/include"
+  CPPFLAGS="${CPPFLAGS} "
+  # CPPFLAGS="${CPPFLAGS} "
+  export CPPFLAGS
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/bison/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/curl/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/icu4c/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/libffi/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/libxml2/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/mysql-client/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/ncurses/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/node@10/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/openldap/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/openssl@1.1/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/readline/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/ruby/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/sqlite/lib"
+  LDFLAGS="${LDFLAGS} -L/usr/local/opt/tcl-tk/lib"
+  # LDFLAGS="${LDFLAGS} "
+  export LDFLAGS
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/curl/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/icu4c/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/libffi/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/libxml2/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/mysql-client/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/ncurses/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/openssl@1.1/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/readline/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/ruby/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/sqlite/lib/pkgconfig"
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/tcl-tk/lib/pkgconfig"
+  # PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:"
+  export PKG_CONFIG_PATH
+  RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+  export RUBY_CONFIGURE_OPTS
 fi
-unset __conda_setup

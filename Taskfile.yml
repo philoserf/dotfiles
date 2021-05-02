@@ -6,12 +6,9 @@ tasks:
       - task: all
 
   all:
-    desc: Run brew, ruby, python, & system updates
+    desc: Run brew & system updates
     cmds:
       - task: brew
-      - task: ruby
-      - task: python
-      - task: node
       - task: system
 
   all:check:
@@ -20,16 +17,16 @@ tasks:
       - task: brew:check
 
   all:clean:
-    desc: Run brew:clean, ruby:clean, python:clean
+    desc: Run brew:clean
     cmds:
       - task: brew:clean
-      - task: ruby:clean
-      - task: python:clean
 
   brew:
     desc: Run brew bundle install --global
     cmds:
+      - brew update
       - brew bundle install --global
+      - brew upgrade
   brew:check:
     desc: Run brew bundle cleanup --global
     cmds:
@@ -38,29 +35,8 @@ tasks:
     desc: Run brew bundle cleanup --global --force
     cmds:
       - brew bundle cleanup --global --force
-
-  ruby:
-    desc: Run bundle update --ruby --bundler
-    cmds:
-      - bundle update --ruby --bundler
-  ruby:clean:
-    desc: Run bundle clean --force
-    cmds:
-      - bundle clean --force
-
-  python:
-    desc: Run conda update --all --yes
-    cmds:
-      - conda update --all --yes
-  python:clean:
-    desc: Run conda clean --all --yes
-    cmds:
-      - conda clean --all --yes
-
-  node:
-    desc: Run npm -g update
-    cmds:
-      - npm -g update
+      - brew autoremove
+      - brew cleanup --prune=all -s
 
   system:
     desc: Run softwareupdate --install --all
