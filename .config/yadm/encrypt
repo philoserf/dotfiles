@@ -1,2 +1,4 @@
 .ssh/id_rsa
 .ssh/*.key
+.secrets.d/*
+.aws/credentials
