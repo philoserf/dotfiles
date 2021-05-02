@@ -1,0 +1,9 @@
+{
+  "hashbang": {
+    "prefix": "hashbang",
+    "description": "bash shell hashbang header",
+    "body": [
+      "#!/bin/bash\n\nset -o errexit\nset -o nounset\nset -o pipefail\n\nDEBUG=\\${DEBUG:=0}\n[[ \\$DEBUG -eq 1 ]] && set -o xtrace\n\nerror() {\n  printf \"\\terror: %s\\n\" \"%@\" >&2\n  exit 1\n}\n"
+    ]
+  }
+}

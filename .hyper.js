@@ -2,8 +2,7 @@ module.exports = {
     config: {
         updateChannel: "stable",
         fontSize: 16,
-        // fontFamily: "Input Mono",
-        fontFamily: "FiraCode Nerd Font",
+        fontFamily: "Input Mono",
         fontWeight: "normal",
         fontWeightBold: "bold",
         lineHeight: 1,

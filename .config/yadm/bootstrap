@@ -1,13 +1,9 @@
 # shellcheck disable=SC2148
 
-system_type=$(uname -s)
+[[ -f "$HOME/.Brewfile" ]] && brew bundle --global
 
-if [ "$system_type" = "Darwin" ]; then
-	if ! command -v brew >/dev/null 2>&1; then
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	fi
-
-	if [ -f "$HOME/.Brewfile" ]; then
-		brew bundle --global
-	fi
-fi
+cat << CADDYFILE>/usr/local/etc/Caddyfile
+localhost
+root * /Users/markayers/www
+file_server
+CADDYFILE
