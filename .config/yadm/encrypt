@@ -1,4 +1,4 @@
 .ssh/id_rsa
 .ssh/*.key
-.secrets.d/*
+.config/zsh/secret/
 .aws/credentials

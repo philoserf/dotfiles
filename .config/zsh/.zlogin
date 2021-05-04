@@ -6,8 +6,8 @@
 [[ ${commands[gh]} ]] && source <(gh completion -s zsh)
 [[ ${commands[starship]} ]] && source <(starship init zsh)
 
-for folder in secrets.d init.d; do
-  for filename in "$HOME/.$folder"/*; do
+for folder in secret include; do
+  for filename in "${ZDOTDIR}/$folder"/*; do
     source "$filename"
   done
 done
