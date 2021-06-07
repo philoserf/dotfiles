@@ -46,7 +46,7 @@ co = checkout
 cm = checkout main
 cmm = checkout main
 
-fa = fetch ---all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
+fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
 up = pull --rebase --autostash --prune
 
 x1 = reflog expire --expire=now --all
