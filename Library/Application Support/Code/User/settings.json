@@ -1,48 +1,24 @@
 {
-  "workbench.colorTheme": "GitHub Dark Dimmed",
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
+  "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "sync.autoDownload": true,
   "sync.autoUpload": true,
   "sync.gist": "6ff84a26a46941dee32ac7a564b72707",
   "sync.quietSync": true,
-  "shellformat.useEditorConfig": true,
-  "shellformat.flag": "-s -i2",
-  "shellformat.effectLanguages": [
-    "shellscript",
-    "dockerfile",
-    "dotenv",
-    "hosts",
-    "ignore",
-    "gitignore",
-    "properties"
+  "terminal.integrated.fontSize": 16,
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.sideBar.location": "right",
+  "go.toolsManagement.autoUpdate": true,
+  "projectManager.git.baseFolders": [
+    "~/source/"
   ],
-"terminal.integrated.fontSize": 16,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
+  "yaml.schemaStore.enable": false,
+  "grammarly.domain": "technical",
+  "grammarly.userWords": [
+    "eksctl",
+    "helmfile"
   ],
-  "python.pythonPath": "/usr/local/opt/python@3.9/bin/python3.9",
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vscode-kubernetes.minikube-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "diffEditor.ignoreTrimWhitespace": false,
+  "tabnine.experimentalAutoImports": true
 }

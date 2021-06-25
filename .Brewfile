@@ -40,7 +40,6 @@ brew "googler"
 brew "graphviz"
 brew "htop"
 brew "httpie"
-brew "httping"
 brew "httrack"
 brew "hub"
 brew "hugo"
@@ -112,9 +111,7 @@ brew "xwmx/taps/pb"
 
 tap "homebrew/cask"
 cask "alfred"
-cask "blurred"
 cask "boinc"
-cask "bunch"
 cask "cardhop"
 cask "cocoaspell"
 cask "coconutbattery"
@@ -146,7 +143,7 @@ cask "shiftit"
 cask "slack"
 cask "thingsmacsandboxhelper"
 cask "vellum"
-cask "visual-studio-code"
+cask "vscodium"
 cask "xquartz"
 cask "zoom"
 
@@ -160,7 +157,6 @@ cask "font-open-dyslexic"
 
 brew "mas"
 mas "Amphetamine", id: 937984704
-mas "Blurred", id: 1497527363
 mas "Drafts", id: 1435957248
 mas "Grammarly for Safari", id: 1462114288
 mas "Hidden Bar", id: 1452453066
@@ -168,11 +164,10 @@ mas "HP Smart", id: 1474276998
 mas "iA Writer", id: 775737590
 mas "Image2icon", id: 992115977
 mas "Keynote", id: 409183694
-mas "Micro Sniff", id: 1504024265
 mas "Mindful Mynah", id: 503981565
 mas "MindNode", id: 1289197285
 mas "Name Mangler", id: 603637384
-mas "Notability", id: 736189492
+mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Things", id: 904280696

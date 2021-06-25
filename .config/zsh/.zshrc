@@ -8,7 +8,7 @@ bindkey -e
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='code --wait --new-window'
+  export EDITOR='codium --wait --new-window'
 fi
 
 export BROWSER='links'

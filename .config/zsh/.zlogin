@@ -13,5 +13,3 @@ for folder in secret include; do
 done
 
 [[ ${commands[exa]} ]] && alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git'
-
-calendar

@@ -3,5 +3,5 @@ module.exports = {
     fontSize: 16,
     fontFamily: "Hack Nerd Font Mono",
   },
-  plugins: ["hyper-one-dark"],
+  plugins: ["hyper-meterial-theme", "hyper-pane", "hyper-search", "hypercwd"],
 };
