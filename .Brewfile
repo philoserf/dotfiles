@@ -131,7 +131,7 @@ cask "launchcontrol"
 cask "launchrocket"
 cask "mactex"
 cask "marked"
-cask "onyx"
+# cask "onyx"
 cask "osxfuse"
 cask "oversight"
 cask "paparazzi"
@@ -171,3 +171,5 @@ mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Things", id: 904280696
+
+cask "send-to-kindle"

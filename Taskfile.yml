@@ -11,12 +11,12 @@ tasks:
       - task: brew
       - task: system
 
-  all:check:
+  check:all:
     desc: Run brew:check
     cmds:
       - task: brew:check
 
-  all:clean:
+  clean:all:
     desc: Run brew:clean
     cmds:
       - task: brew:clean
@@ -27,12 +27,12 @@ tasks:
       - brew update
       - brew bundle install --global
       - brew upgrade
-  brew:check:
+  check:brew:
     desc: Run brew bundle cleanup --global
     cmds:
       - brew bundle cleanup --global
       - brew autoremove --dry-run
-  brew:clean:
+  clean:brew:
     desc: Run brew bundle cleanup --global --force
     cmds:
       - brew bundle cleanup --global --force
