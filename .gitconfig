@@ -1,0 +1,8 @@
+[user]
+	name = Mark Ayers
+	email = mark.ayers@hypori.com
+[push]
+	autoSetupRemote = true
+[alias]
+	same = commit --amend --no-edit
+	please = push --force-with-lease

@@ -1,0 +1,4 @@
+.ssh/*.pem
+.ssh/hypori
+.ssh/*.key
+.gnupg/*.gpg
