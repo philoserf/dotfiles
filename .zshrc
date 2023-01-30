@@ -1,9 +1,12 @@
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 export HISTCONTROL=ignoredups
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000000
 export SAVEHIST=1000000000
+
 setopt APPEND_HISTORY
 setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
@@ -25,7 +28,7 @@ else
 fi
 
 if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
-  command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
+	command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
 fi
 source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
 zcomet load MichaelAquilina/zsh-you-should-use
@@ -54,4 +57,3 @@ PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
 PATH="/opt//homebrew/lib/ruby/gems/3.2.0/bin/:${PATH}"
 PATH="${HOME}/go/bin:${PATH}"
 PATH="${HOME}/bin:${PATH}"
-

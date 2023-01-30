@@ -13,7 +13,9 @@
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
-  "gitProjectManager.baseProjectsFolders": ["$HOME/source"],
+  "gitProjectManager.baseProjectsFolders": [
+    "$HOME/source"
+  ],
   "gitlens.defaultDateFormat": null,
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
   "redhat.telemetry.enabled": true,
@@ -75,7 +77,6 @@
   ],
   "atlascode.bitbucket.pipelines.explorerEnabled": false,
   "atlascode.bitbucket.issues.explorerEnabled": false,
-  "boot-java.rewrite.reconcile": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -91,7 +92,9 @@
   "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
   "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
   "jenkins.pipeline.linter.connector.user": "mark.ayers",
-  "groovyLint.basic.verbose": true,
   "atlascode.jira.enabled": false,
   "atlascode.bitbucket.enabled": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

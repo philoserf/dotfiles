@@ -1,0 +1,25 @@
+{
+	"hashbang": {
+		"prefix": "#!",
+		"body": [
+			"#!/bin/bash",
+			"",
+			"set -o errexit",
+			"set -o pipefail",
+			"[[ -n ${DEBUG:-} ]] && set -o xtrace",
+			"set -o nounset",
+			"",
+			"die() {",
+			"    echo \"$*\" >&2",
+			"    exit 1",
+			"}",
+			"",
+			"log() {",
+			"    echo \"$*\" >&2",
+			"}",
+			"",
+			""
+		],
+		"description": "Hashbang"
+	}
+}
