@@ -54,6 +54,6 @@ fi
 
 PATH="/opt/homebrew/opt/python@3.10/libexec/bin":${PATH}
 PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
-PATH="/opt//homebrew/lib/ruby/gems/3.2.0/bin/:${PATH}"
+PATH="/opt/homebrew/lib/ruby/gems/3.2.0/bin/:${PATH}"
 PATH="${HOME}/go/bin:${PATH}"
 PATH="${HOME}/bin:${PATH}"
