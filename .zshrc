@@ -29,6 +29,8 @@ if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
 fi
 source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
 zcomet load MichaelAquilina/zsh-you-should-use
+zcomet load unixorn/git-extra-commands
+zcomet load unixorn/tumult.plugin.zsh
 zcomet load zsh-users/zsh-completions
 zcomet load zsh-users/zsh-history-substring-search
 zcomet load zsh-users/zsh-syntax-highlighting

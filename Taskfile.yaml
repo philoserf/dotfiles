@@ -1,0 +1,12 @@
+# https://taskfile.dev
+version: '3'
+tasks:
+  default:
+    cmds:
+      - softwareupdate --install --all
+      - brew update
+      - brew bundle --global
+      - brew upgrade
+      - brew cleanup --prune=all
+      - brew bundle cleanup --global
+    silent: true

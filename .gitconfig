@@ -1,8 +1,26 @@
 [user]
 	name = Mark Ayers
 	email = mark.ayers@hypori.com
+	initials = MA
+
 [push]
 	autoSetupRemote = true
+
 [alias]
+	s = status
+	br = branch
+	ci = commit
+	co = checkout
+
+	fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
+	up = pull --rebase --autostash --prune
+
 	same = commit --amend --no-edit
 	please = push --force-with-lease
+
+	ignored = ls-files --others
+	
+	set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
+
+	code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
+	cc = "!git code-changes"
