@@ -6,8 +6,8 @@ source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
 
 # shell history configuration
 export HISTFILE=~/.config/zsh/zsh_history
-export HISTSIZE=120000 # number of commands to remember
-export SAVEHIST=100000 # number of commands to save to disk
+export HISTSIZE=12000 # number of commands to remember
+export SAVEHIST=10000 # number of commands to save to disk
 setopt SHARE_HISTORY # share history between terminals
 setopt HIST_REDUCE_BLANKS # remove superfluous blanks
 setopt HIST_IGNORE_SPACE # leading space hides commands from history
@@ -55,11 +55,36 @@ if type brew &>/dev/null; then
 	compinit
 fi
 
-# initialize path
+# initialize homebrew installed tools paths
 PATH="/opt/homebrew/opt/python@3.10/libexec/bin":${PATH}
 PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
 PATH="/opt/homebrew/lib/ruby/gems/3.2.0/bin/:${PATH}"
+
+# initialize my paths
 PATH="${HOME}/go/bin:${PATH}"
 PATH="${HOME}/bin:${PATH}"
 
 zcomet compinit # initialize completion
+
+# aliases
+alias ..='cd ..'
+alias ls='exa --sort=modified --reverse --classify --group-directories-first --icons --color=always'
+alias ll='ls --long'
+alias la='ls --long --all'
+alias l='ls'
+alias grep='grep --color=auto'
+alias c='clear'
+alias h='history'
+alias j='jobs -l'
+alias p='ps -ef'
+alias env='env | sort'
+alias g='git'
+alias t='terraform'
+alias k='kubectl'
+alias kx='kubectx'
+alias kn='kubens'
+
+# functions
+function es() {
+	open "https://explainshell.com/explain?cmd=$*"
+}
