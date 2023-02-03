@@ -12,6 +12,8 @@
 	ci = commit
 	co = checkout
 
+	lo = log --decorate --pretty=oneline --abbrev-commit --all
+
 	fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
 	up = pull --rebase --autostash --prune
 
@@ -24,5 +26,3 @@
 
 	code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 	cc = "!git code-changes"
-[core]
-	editor = code --new --wait

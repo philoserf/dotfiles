@@ -47,6 +47,8 @@ cask 'microsoft-teams'
 cask 'openvpn-connect'
 cask 'pdk'
 cask 'podman-desktop'
+cask 'hyper'
+cask 'swiftdefaultappsprefpane'
 
 tap 'homebrew/cask-fonts'
 cask 'font-fira-code-nerd-font'

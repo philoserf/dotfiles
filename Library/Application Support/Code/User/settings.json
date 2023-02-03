@@ -13,9 +13,6 @@
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
-  "gitProjectManager.baseProjectsFolders": [
-    "$HOME/source"
-  ],
   "gitlens.defaultDateFormat": null,
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
   "redhat.telemetry.enabled": true,
@@ -42,9 +39,6 @@
     "yaml": true,
     "plaintext": true,
     "markdown": true
-  },
-  "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
@@ -82,9 +76,6 @@
   },
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "open",
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
-  },
   "git.defaultCloneDirectory": "$HOME/source",
   "[ssh_config]": {
     "editor.defaultFormatter": "lkrms.inifmt"
@@ -96,5 +87,30 @@
   "atlascode.bitbucket.enabled": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "sonarlint.connectedMode.connections.sonarqube": [
+    {
+      "serverUrl": "https://hyporiqube.droidcloud.mobi",
+      "connectionId": "https-hyporiqube-droidcloud-mobi-"
+    }
+  ],
+  "projectManager.git.baseFolders": [
+    "~/source"
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.trunk/*out": true
+  },
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  "files.watcherExclude": {
+    "**/.trunk/*out": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "trunk.io"
   }
 }
