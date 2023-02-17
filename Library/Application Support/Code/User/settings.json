@@ -25,13 +25,11 @@
     "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl"
   },
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "workbench.preferredHighContrastColorTheme": "GitHub Light High Contrast",
-  "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
-  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.colorTheme": "Default Light+ Experimental",
+  "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
+  "workbench.preferredLightColorTheme": "Default Light+ Experimental",
   "yaml.schemas": {
-    "file:///Users/mark.ayers/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/mark.ayers/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "workbench.editor.untitled.hint": "hidden",
   "github.copilot.enable": {
@@ -72,7 +70,8 @@
   "atlascode.bitbucket.pipelines.explorerEnabled": false,
   "atlascode.bitbucket.issues.explorerEnabled": false,
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "open",
@@ -83,7 +82,7 @@
   "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
   "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
   "jenkins.pipeline.linter.connector.user": "mark.ayers",
-  "atlascode.jira.enabled": false,
+  "atlascode.jira.enabled": true,
   "atlascode.bitbucket.enabled": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -110,7 +109,31 @@
   "files.watcherExclude": {
     "**/.trunk/*out": true
   },
+  "python.formatting.provider": "black",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "[ini]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "go.lintFlags": [
+    "[\"--enable-all\"]"
+  ],
   "[yaml]": {
-    "editor.defaultFormatter": "trunk.io"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "gitlens.statusBar.enabled": false,
+  "[puppet]": {
+    "editor.defaultFormatter": "puppet.puppet-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
   }
 }

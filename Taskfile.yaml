@@ -1,5 +1,5 @@
 # https://taskfile.dev
-version: '3'
+version: "3"
 tasks:
   default:
     cmds:
@@ -7,6 +7,15 @@ tasks:
       - brew update
       - brew bundle --global
       - brew upgrade
-      - brew cleanup --prune=all
       - brew bundle cleanup --global
+    silent: true
+  check:
+    cmds:
+      - brew outdated
+      - brew bundle cleanup --global
+    silent: true
+  clean:
+    cmds:
+      - brew cleanup --prune=all
+      - brew bundle cleanup --global --force
     silent: true

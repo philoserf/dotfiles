@@ -64,3 +64,12 @@ brew 'dockle'
 tap 'puppetlabs/puppet'
 cask 'puppet-agent'
 cask 'puppet-bolt'
+
+# recent additions
+cask 'cloudflare-warp'
+cask 'moom'
+cask 'obsidian'
+cask 'scapple'
+brew 'gh'
+cask "docker"
+brew "kubernetes-cli"

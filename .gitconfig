@@ -26,3 +26,9 @@
 
 	code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 	cc = "!git code-changes"
+
+[core]
+	excludesfile = /Users/mark.ayers/.gitignore_global
+
+[commit]
+	template = /Users/mark.ayers/.gitmessage
