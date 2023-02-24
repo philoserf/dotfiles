@@ -7,15 +7,14 @@ tasks:
       - brew update
       - brew bundle --global
       - brew upgrade
+      - brew autoremove
       - brew bundle cleanup --global
-    silent: true
   check:
     cmds:
       - brew outdated
       - brew bundle cleanup --global
-    silent: true
   clean:
     cmds:
+      - brew autoremove
       - brew cleanup --prune=all
       - brew bundle cleanup --global --force
-    silent: true

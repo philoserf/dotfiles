@@ -6,8 +6,9 @@ source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
 
 # shell history configuration
 export HISTFILE=~/.config/zsh/zsh_history
-export HISTSIZE=12000       # number of commands to remember
-export SAVEHIST=10000       # number of commands to save to disk
+export HISTSIZE=1200        # number of commands to remember
+export SAVEHIST=1000        # number of commands to save to disk
+setopt APPEND_HISTORY       # append to history file
 setopt SHARE_HISTORY        # share history between terminals
 setopt HIST_REDUCE_BLANKS   # remove superfluous blanks
 setopt HIST_IGNORE_SPACE    # leading space hides commands from history
@@ -17,6 +18,7 @@ setopt HIST_SAVE_NO_DUPS    # don't write duplicate entries to the history file
 alias history='fc -l 1'     # list all history with line numbers
 zcomet load marlonrichert/zsh-hist
 
+# hold for future use
 # delete-failed-history() {
 #   (( ? ))
 
@@ -57,7 +59,7 @@ if type brew &>/dev/null; then
 fi
 
 # initialize homebrew installed tools paths
-PATH="/opt/homebrew/opt/python@3.10/libexec/bin":${PATH}
+PATH="/opt/homebrew/opt/python/libexec/bin":${PATH}
 PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
 PATH="/opt/homebrew/lib/ruby/gems/3.2.0/bin/:${PATH}"
 
@@ -71,7 +73,7 @@ zcomet compinit # initialize completion
 alias ..='cd ..'
 alias ls='exa --sort=modified --reverse --classify --group-directories-first --icons --color=always'
 alias ll='ls --long'
-alias la='ls --long --all'
+alias la='ls --all'
 alias l='ls'
 alias grep='grep --color=auto'
 alias c='clear'
@@ -86,18 +88,26 @@ alias kx='kubectx'
 alias kn='kubens'
 
 # functions
+
+# open explainshell with command
 function es() {
 	open "https://explainshell.com/explain?cmd=$*"
 }
 
+# aggressively deep clean git repo
 function gdc() {
-	git count-objects -v -H
+	set -o xtrace
+	git count-objects --verbose --human-readable
 	git reflog expire --expire=now --all
-	git repack -a -d -f --depth=250 --window=250
+	git repack -adf --depth=250 --window=250
 	git gc --aggressive --prune=now --force
 	git gc
 	git gc --aggressive
 	git repack -Ad
 	git prune
-	git count-objects -v -H
+	git count-objects --verbose --human-readable
 }
+
+bindkey -e
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
