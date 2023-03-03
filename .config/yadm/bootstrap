@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ -f "$HOME/.Brewfile" ]] && brew bundle --global
+
+cat << CADDYFILE>/opt/homebrew/etc/Caddyfile
+localhost {
+	tls internal
+	respond ""
+}
+CADDYFILE
