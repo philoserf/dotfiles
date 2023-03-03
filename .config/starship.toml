@@ -1,0 +1,24 @@
+# configuration
+format = """\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$kubernetes\
+$cmd_duration\
+$jobs\
+$shlvl\
+$directory\
+$status\
+$character
+"""
+
+[directory]
+truncation_symbol = "…/"
+truncation_length = 1
+[kubernetes]
+disabled = false
+[shlvl]
+disabled = false
+[status]
+disabled = false

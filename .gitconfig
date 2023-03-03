@@ -1,0 +1,72 @@
+[init]
+defaultBranch = main
+
+[user]
+name = Mark Ayers
+email = mark@philoserf.com
+initials = ma
+
+[credential]
+helper = osxkeychain
+
+[core]
+excludesfile = ~/.gitignore
+whitespace = warn
+
+[fetch]
+showForcedUpdates = true
+
+[alias]
+br = branch
+ci = commit
+cl = clone
+co = checkout
+cm = checkout main
+cmm = checkout main
+
+fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
+up = pull --rebase --autostash --prune
+
+x1 = reflog expire --expire=now --all
+x2 = gc --prune=now
+
+new = "!git init && git commit -m “root” --allow-empty"
+ignored = ls-files --others
+amend = commit --amend
+same = commit --amend --no-edit
+please = push --force-with-lease
+cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main\\|develop\\gh-pages' | xargs -n 1 git branch -d"
+
+dc = diff --cached
+dlc = diff --cached HEAD^
+diff = diff --word-diff
+dr = "!f() { git diff "$1"^.."$1"; }; f"
+
+la = "!git config -l | grep alias | cut -c 7-"
+lg = log --stat
+lgg = log --graph
+lo = log --oneline --decorate
+lod = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short
+
+r = reset
+r1 = reset HEAD^
+r2 = reset HEAD^^
+rh = reset --hard
+rh1 = reset HEAD^ --hard
+rh2 = reset HEAD^^ --hard
+rho = reset --hard origin
+
+st = status
+s = status --short --branch
+
+sa = stash apply
+sl = stash list
+ss = stash save
+sd = stash drop
+
+set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
+code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
+cc = "!git code-changes"
+
+[pull]
+ff = only
