@@ -31,7 +31,7 @@ brew 'trash'
 brew 'tree'
 brew 'yadm'
 brew 'yamllint'
-brew "kubernetes-cli"
+# brew "kubernetes-cli"
 brew "packer"
 
 tap 'homebrew/services'
@@ -73,3 +73,6 @@ brew 'zsh-syntax-highlighting'
 brew 'zsh-autosuggestions'
 brew 'zsh-history-substring-search'
 brew 'zsh-lovers'
+brew 'tfenv'
+brew 'parallel'
+brew 'grep'

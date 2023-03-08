@@ -139,11 +139,11 @@
   "[packer]": {
     "editor.defaultFormatter": "szTheory.vscode-packer-powertools"
   },
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "2db4fc85-9805-4eca-bbc3-87ae682d1513",
-    "projectKey": "CAB"
-  },
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
