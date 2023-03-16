@@ -1,149 +1,66 @@
 {
-  "atlascode.jira.jqlList": [
-    {
-      "id": "523c4c08-2ca9-4dcd-bbdd-118782529411",
-      "enabled": true,
-      "name": "My droidcloud Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "2db4fc85-9805-4eca-bbc3-87ae682d1513",
-      "monitor": true
-    }
-  ],
   "editor.fontFamily": "\"Fira Code\", Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
-  "git.autofetch": true,
-  "gitlens.defaultDateFormat": null,
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
-  "redhat.telemetry.enabled": true,
-  "terminal.external.osxExec": "Warp.app",
-  "terminal.integrated.fontFamily": "\"FiraCode Nerd Font\", Menlo, Monaco, 'Courier New', monospace",
-  "terminal.integrated.fontSize": 16,
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl"
-  },
-  "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Default Light+ Experimental",
-  "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
-  "workbench.preferredLightColorTheme": "Default Light+ Experimental",
-  "yaml.schemas": {
-    "file:///Users/mark.ayers/.vscode/extensions/atlassian.atlascode-3.0.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "workbench.editor.untitled.hint": "hidden",
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": true,
-    "plaintext": true,
-    "markdown": true
-  },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
-  "puppet.titleBar.pdkNewModule.enable": false,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
-  },
-  "go.formatTool": "gofumpt",
-  "go.lintTool": "golangci-lint",
-  "java.imports.gradle.wrapper.checksums": [
-    {
-      "sha256": "180522c4af2d4e499bed921028829f6dc680344e6bbf96289b29cb27b716b1f0",
-      "allowed": true
-    },
-    {
-      "sha256": "e996d452d2645e70c01c11143ca2d3742734a28da2bf61f25c82bdc288c9e637",
-      "allowed": true
-    },
-    {
-      "sha256": "33ad4583fd7ee156f533778736fa1b4940bd83b433934d1cc4e9f608e99a6a89",
-      "allowed": true
-    }
-  ],
-  "atlascode.bitbucket.pipelines.explorerEnabled": false,
-  "atlascode.bitbucket.issues.explorerEnabled": false,
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnType": true
-  },
-  "workbench.startupEditor": "none",
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.defaultCloneDirectory": "$HOME/source",
-  "[ssh_config]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
-  "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
-  "jenkins.pipeline.linter.connector.user": "mark.ayers",
-  "atlascode.jira.enabled": true,
-  "atlascode.bitbucket.enabled": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "sonarlint.connectedMode.connections.sonarqube": [
-    {
-      "serverUrl": "https://hyporiqube.droidcloud.mobi",
-      "connectionId": "https-hyporiqube-droidcloud-mobi-"
-    }
-  ],
-  "projectManager.git.baseFolders": [
-    "~/source"
-  ],
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "files.exclude": {
     "**/.trunk/*out": true
   },
-  "trunk.trunkGrayOutNonBlockingIssues": false,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
   "files.watcherExclude": {
     "**/.trunk/*out": true
   },
-  "python.formatting.provider": "black",
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
+  "git.autofetch": true,
+  "git.defaultCloneDirectory": "$HOME/source",
   "git.openRepositoryInParentFolders": "never",
-  "[ini]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "go.lintFlags": [
-    "[\"--enable-all\"]"
-  ],
-  "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "yaml": true
   },
   "gitlens.statusBar.enabled": false,
-  "[puppet]": {
-    "editor.defaultFormatter": "puppet.puppet-vscode"
+  "go.lintFlags": ["[\"--enable-all\"]"],
+  "go.useLanguageServer": true,
+  "gopls": {
+    "formatting.gofumpt": true
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[properties]": {
-    "editor.defaultFormatter": "lkrms.inifmt"
-  },
-  "[packer]": {
-    "editor.defaultFormatter": "szTheory.vscode-packer-powertools"
-  },
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "go.lintTool": "golangci-lint",
+  "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
+  "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
+  "jenkins.pipeline.linter.connector.user": "mark.ayers",
+  "projectManager.git.baseFolders": ["~/source"],
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
+  "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "task.allowAutomaticTasks": "on",
+  "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "[css]": {
+  "terminal.integrated.fontFamily": "\"FiraCode Nerd Font\", Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  "trunk.trunkGrayOutNonBlockingIssues": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "window.autoDetectColorScheme": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vs-minimal",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
+  "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
