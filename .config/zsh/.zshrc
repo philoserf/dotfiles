@@ -1,3 +1,7 @@
+# load order 6 after /etc/zshrc and before /etc/zlogin
+
+export ZSHRC_LOADED=1
+
 # initialize zcomet package manager
 if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
 	command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
@@ -18,10 +22,8 @@ setopt HIST_SAVE_NO_DUPS    # don't write duplicate entries to the history file
 alias history='fc -l 1'     # list all history with line numbers
 zcomet load marlonrichert/zsh-hist
 
-# hold for future use
 # delete-failed-history() {
 #   (( ? ))
-
 #     hist -s d -1
 # }
 # autoload -Uz add-zsh-hook
@@ -36,13 +38,16 @@ export EDITOR='vim'
 export VISUAL='code --wait --new-window'
 
 zcomet load MichaelAquilina/zsh-you-should-use # suggest better alternatives to common commands
-zcomet load unixorn/git-extra-commands         # add some useful git aliases
-zcomet load unixorn/tumult.plugin.zsh          # add some useful aliases
+
+zcomet load unixorn/git-extra-commands # add some useful git aliases
+zcomet load unixorn/tumult.plugin.zsh  # add some useful aliases
 
 zcomet load zsh-users/zsh-completions              # additional completions from the community
-zcomet load zsh-users/zsh-history-substring-search # search through history with up/down arrows
 zcomet load zsh-users/zsh-syntax-highlighting      # syntax highlighting for the shell
 zcomet load zsh-users/zsh-autosuggestions          # suggest commands as you type
+zcomet load zsh-users/zsh-history-substring-search # search through history with up/down arrows
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # set prompt
 source <(/opt/homebrew/bin/starship init zsh --print-full-init)
@@ -109,6 +114,5 @@ function gdc() {
 	git count-objects --verbose --human-readable
 }
 
-bindkey -e
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
+# Enable comments when working in an interactive shell.
+setopt interactive_comments

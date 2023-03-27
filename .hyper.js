@@ -2,10 +2,10 @@
 module.exports = {
   config: {
     fontSize: 16,
-    fontFamily: '"FiraCode Nerd Font", Menlo, Monaco, "Courier New", monospace',
+    fontFamily: '"NotoSansMono Nerd Font", monospace',
     lineHeight: 1.1,
   },
-  // plugins: ["hyper-one-light"],
+  plugins: ["hyper-one-light"],
   localPlugins: [],
   keymaps: {},
 };

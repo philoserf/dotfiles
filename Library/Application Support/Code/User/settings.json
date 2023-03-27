@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "\"Fira Code\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "\"Noto Sans Mono\", monospace",
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
   "files.exclude": {
@@ -37,7 +37,7 @@
   "task.allowAutomaticTasks": "on",
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "\"FiraCode Nerd Font\", Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "\"NotoSansMono Nerd Font\", monospace",
   "terminal.integrated.fontSize": 16,
   "trunk.trunkGrayOutNonBlockingIssues": false,
   "vs-kubernetes": {
