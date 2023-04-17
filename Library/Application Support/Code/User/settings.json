@@ -15,9 +15,10 @@
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
+    "yaml": true,
     "plaintext": true,
-    "yaml": true
+    "markdown": true,
+    "scminput": false
   },
   "gitlens.statusBar.enabled": false,
   "go.lintFlags": ["[\"--enable-all\"]"],
@@ -39,7 +40,6 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "\"NotoSansMono Nerd Font\", monospace",
   "terminal.integrated.fontSize": 16,
-  "trunk.trunkGrayOutNonBlockingIssues": false,
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl",
@@ -62,5 +62,12 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "window.zoomLevel": -1
 }

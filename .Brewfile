@@ -1,7 +1,7 @@
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 
-brew 'awscli'
+# brew 'awscli'
 brew 'azure-cli'
 brew 'exa'
 brew 'gh'
@@ -85,3 +85,12 @@ cask 'font-noto-sans-mono'
 cask 'font-noto-serif'
 cask 'font-noto-serif-display'
 cask 'font-noto-nerd-font'
+
+# more additions
+brew 'coreutils'
+brew 'gnu-sed'
+brew 'pstree'
+brew 'watch'
+cask 'cardhop'
+cask 'fantastical'
+brew 'cmatrix'

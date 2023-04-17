@@ -20,14 +20,17 @@ setopt HIST_IGNORE_ALL_DUPS # ignore duplicated commands
 setopt HIST_FIND_NO_DUPS    # don't record an event that was just recorded again
 setopt HIST_SAVE_NO_DUPS    # don't write duplicate entries to the history file
 alias history='fc -l 1'     # list all history with line numbers
-zcomet load marlonrichert/zsh-hist
 
+# zcomet load marlonrichert/zsh-hist
 # delete-failed-history() {
 #   (( ? ))
 #     hist -s d -1
 # }
 # autoload -Uz add-zsh-hook
 # add-zsh-hook precmd delete-failed-history
+
+setopt AUTO_CD              # cd into directory when typing its name
+
 
 # set language
 export LANG=en_US.UTF-8
@@ -116,3 +119,4 @@ function gdc() {
 
 # Enable comments when working in an interactive shell.
 setopt interactive_comments
+bindkey -e

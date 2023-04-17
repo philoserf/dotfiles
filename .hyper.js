@@ -5,7 +5,7 @@ module.exports = {
     fontFamily: '"NotoSansMono Nerd Font", monospace',
     lineHeight: 1.1,
   },
-  plugins: ["hyper-one-light"],
+//   plugins: ["hyper-one-light"],
   localPlugins: [],
   keymaps: {},
 };
