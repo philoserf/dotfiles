@@ -5,7 +5,7 @@ module.exports = {
     fontFamily: '"FiraCode Nerd Font", monospace',
     lineHeight: 1.1,
   },
-  plugins: ["hyper-one-light"],
+  plugins: ["hyper-native"],
   localPlugins: [],
   keymaps: {},
 };
