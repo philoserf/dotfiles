@@ -1,7 +1,7 @@
 {
-	"hashbang": {
+	"hashbang_full": {
 		"prefix": "hash",
-		"description": "New script boilerplate",
+		"description": "Shell script boilerplate",
 		"scope": "shellscript",
 		"body": [
 			"#!/bin/bash",
@@ -53,6 +53,16 @@
 			"}",
 			"",
 			"main \"$@\"",
+			""
+		]
+	},
+	"hashbang_mnml": {
+		"prefix": "hb",
+		"description": "Minimal hashbang",
+		"scope": "shellscript",
+		"body": [
+			"#!/bin/bash",
+			"#",
 			""
 		]
 	}

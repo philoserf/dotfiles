@@ -1,15 +1,12 @@
 {
-  "editor.fontFamily": "\"Noto Sans Mono\", monospace",
   "editor.fontSize": 16,
+  "editor.fontFamily": "'Fira Code', monospace",
   "editor.inlineSuggest.enabled": true,
   "files.exclude": {
     "**/.trunk/*out": true
   },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "files.watcherExclude": {
-    "**/.trunk/*out": true
-  },
   "git.autofetch": true,
   "git.defaultCloneDirectory": "$HOME/source",
   "git.openRepositoryInParentFolders": "never",
@@ -20,26 +17,23 @@
     "markdown": true,
     "scminput": false
   },
-  "gitlens.statusBar.enabled": false,
   "go.lintFlags": ["[\"--enable-all\"]"],
   "go.useLanguageServer": true,
+  "go.lintTool": "golangci-lint",
   "gopls": {
     "formatting.gofumpt": true
   },
-  "go.lintTool": "golangci-lint",
   "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
   "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
   "jenkins.pipeline.linter.connector.user": "mark.ayers",
   "projectManager.git.baseFolders": ["~/source"],
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
   "python.formatting.provider": "black",
-  "redhat.telemetry.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "task.allowAutomaticTasks": "on",
-  "terminal.external.osxExec": "Warp.app",
+  "redhat.telemetry.enabled": false,
+  "terminal.external.osxExec": "Hyper.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontFamily": "\"NotoSansMono Nerd Font\", monospace",
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', monospace",
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl",
@@ -47,16 +41,13 @@
   },
   "window.autoDetectColorScheme": true,
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.colorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "vs-minimal",
   "[python]": {
     "editor.formatOnType": true
   },
-  "workbench.colorTheme": "GitHub Light",
-  "workbench.preferredHighContrastColorTheme": "GitHub Dark High Contrast",
-  "workbench.preferredHighContrastLightColorTheme": "GitHub Light High Contrast",
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
   },
@@ -69,5 +60,16 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "window.zoomLevel": -1
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

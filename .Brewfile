@@ -59,9 +59,9 @@ cask "alfred"
 cask "docker"
 
 tap 'homebrew/cask-fonts'
-cask 'font-fira-code-nerd-font'
-cask 'font-fira-code'
 cask 'font-open-dyslexic'
+cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 
 tap 'golangci/tap'
 brew 'golangci-lint'
@@ -76,15 +76,6 @@ brew 'zsh-lovers'
 brew 'tfenv'
 brew 'parallel'
 brew 'grep'
-
-# noto fonts
-cask 'font-noto-mono'
-cask 'font-noto-sans'
-cask 'font-noto-sans-display'
-cask 'font-noto-sans-mono'
-cask 'font-noto-serif'
-cask 'font-noto-serif-display'
-cask 'font-noto-nerd-font'
 
 # more additions
 brew 'coreutils'
