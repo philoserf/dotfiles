@@ -1,16 +1,14 @@
 {
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Default Light Modern",
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
 
   "editor.fontSize": 16,
   "editor.fontFamily": "'Fira Code', monospace",
   "editor.inlineSuggest.enabled": true,
 
-  "files.exclude": {
-    "**/.trunk/*out": true
-  },
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
@@ -25,12 +23,23 @@
     "scminput": false
   },
 
+  "go.formatTool": "gofumpt",
   "go.lintFlags": ["[\"--enable-all\"]"],
-  "go.useLanguageServer": true,
   "go.lintTool": "golangci-lint",
+  "go.useLanguageServer": true,
   "gopls": {
     "formatting.gofumpt": true
   },
+
+  "gitlens.graph.layout": "panel",
+  "gitlens.autolinks": [
+    {
+      "prefix": "CHI-",
+      "url": "https://droidcloud.atlassian.net/browse/CHI-<num>"
+    }
+  ],
+
+  "groovyLint.fix.trigger": "onSave",
 
   "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
   "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
@@ -54,9 +63,6 @@
     "vscode-kubernetes.minikube-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
 
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.startupEditor": "none",
-
   "[python]": {
     "editor.formatOnType": true
   },
@@ -69,9 +75,6 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -83,5 +86,15 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "workbench.colorTheme": "Default Light Modern"
 }

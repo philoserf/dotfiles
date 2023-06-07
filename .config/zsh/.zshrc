@@ -90,9 +90,6 @@ alias h='history'
 alias j='jobs -l'
 alias p='ps -ef'
 alias env='env | sort'
-alias g='git'
-alias t='terraform'
-alias k='kubectl'
 alias kx='kubectx'
 alias kn='kubens'
 
@@ -120,3 +117,5 @@ function gdc() {
 # Enable comments when working in an interactive shell.
 setopt interactive_comments
 bindkey -e
+
+# TODO: reorganize this file and add missing exe safeguards

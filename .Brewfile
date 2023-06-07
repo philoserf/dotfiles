@@ -1,87 +1,115 @@
-tap 'homebrew/bundle'
-tap 'homebrew/core'
+tap "homebrew/services"
 
-# brew 'awscli'
-brew 'azure-cli'
-brew 'exa'
-brew 'gh'
-brew 'git-extras'
-brew 'git-sizer'
-brew 'gitup'
-brew 'gnupg'
-brew 'go-task'
-brew 'go'
-brew 'gradle'
-brew 'grammarly-languageserver'
-brew 'hadolint'
-brew 'htop'
-brew 'jfrog-cli'
-brew 'jq'
-brew 'lastpass-cli'
-brew 'maven'
-brew 'node'
-brew 'ripgrep'
-brew 'ruby'
-brew 'shellcheck'
-brew 'starship'
-# brew 'terraform' using tfenv
-brew 'tflint'
-brew 'tfsec'
-brew 'trash'
-brew 'tree'
-brew 'yadm'
-brew 'yamllint'
-# brew "kubernetes-cli"
-brew "packer"
+brew "azure-cli"
+brew "bash"
+brew "cmatrix" # for fun
+brew "coreutils" # for gnu tools
+brew "curl"
+brew "exa" # for ls
+brew "gh"
+brew "git-extras"
+brew "git-sizer"
+brew "gitup"
+brew "gnu-sed"
+brew "gnupg"
+brew "go"
+brew "go-task"
+brew "grammarly-languageserver"
+brew "hadolint"
+brew "helm"
+brew "htop"
+brew "jq"
+brew "node"
+brew "pandoc"
+brew "parallel" # for copying cloud images to azure storage
+brew "pstree"
+brew "rbenv"
+brew "ripgrep"
+brew "ruby"
+brew "shellcheck"
+brew "shunit2" # for testing shell scripts
+brew "starship" # for shell prompt
+brew "terminal-notifier"
+brew "tfenv"
+brew "tflint"
+brew "tfsec"
+brew "trash"
+brew "tree"
+brew "watch"
+brew "yadm" # for dotfiles
+brew "yamllint"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-history-substring-search"
+brew "zsh-lovers"
+brew "zsh-syntax-highlighting"
 
-tap 'homebrew/services'
-brew 'podman'
+tap "golangci/tap"
+brew "golangci-lint"
 
-tap 'homebrew/cask'
-cask 'brave-browser'
-cask 'cloudflare-warp'
-cask 'firefox'
-cask 'google-chrome'
-cask 'grammarly-desktop'
-cask 'grammarly'
-cask 'hyper'
-cask 'microsoft-auto-update'
-cask 'microsoft-edge'
-cask 'microsoft-office'
-cask 'microsoft-teams'
-cask 'moom'
-cask 'obsidian'
-cask 'openvpn-connect'
-cask 'podman-desktop'
-cask 'scapple'
-cask 'swiftdefaultappsprefpane'
+tap "homebrew/cask-versions"
 cask "alfred"
-cask "docker"
+cask "cardhop"
+cask "cloudflare-warp"
+cask "grammarly"
+cask "grammarly-desktop"
+cask "hyper"
+cask "keycastr"
+cask "mactex"
+cask "microsoft-outlook"
+cask "microsoft-teams"
+cask "microsoft-word"
+cask "obsidian"
+cask "openvpn-connect"
+cask "podman-desktop"
+cask "scapple"
+cask "swiftdefaultappsprefpane"
+cask "visual-studio-code-insiders"
 
-tap 'homebrew/cask-fonts'
-cask 'font-open-dyslexic'
-cask 'font-fira-code'
-cask 'font-fira-code-nerd-font'
+tap "homebrew/cask-fonts"
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-open-dyslexic"
+cask "font-lato"
+cask "font-rubik"
 
-tap 'golangci/tap'
-brew 'golangci-lint'
-
-# recent additions
-brew 'zsh'
-brew 'zsh-completions'
-brew 'zsh-syntax-highlighting'
-brew 'zsh-autosuggestions'
-brew 'zsh-history-substring-search'
-brew 'zsh-lovers'
-brew 'tfenv'
-brew 'parallel'
-brew 'grep'
-
-# more additions
-brew 'coreutils'
-brew 'gnu-sed'
-brew 'pstree'
-brew 'watch'
-cask 'cardhop'
-cask 'fantastical'
-brew 'cmatrix'
+tap "homebrew/bundle"
+vscode "alefragnani.project-manager"
+vscode "DavidAnson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "dongli.python-preview"
+vscode "donjayamanne.githistory"
+vscode "eamodio.gitlens"
+vscode "EditorConfig.EditorConfig"
+vscode "exiasr.hadolint"
+vscode "felipecaputo.git-project-manager"
+vscode "GitHub.copilot-chat"
+vscode "GitHub.copilot-labs"
+vscode "GitHub.copilot-nightly"
+vscode "golang.go"
+vscode "hashicorp.terraform"
+vscode "janjoerke.jenkins-pipeline-linter-connector"
+vscode "mkhl.shfmt"
+vscode "ms-azuretools.vscode-azureterraform"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode.azure-account"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "NicolasVuillamy.vscode-groovy-lint"
+vscode "njpwerner.autodocstring"
+vscode "puppet.puppet-vscode"
+vscode "redhat.vscode-yaml"
+vscode "samuelcolvin.jinjahtml"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "Shopify.ruby-lsp"
+vscode "sleistner.vscode-fileutils"
+vscode "sugatoray.jinja-extension-pack"
+vscode "timonwong.shellcheck"
+vscode "trunk.io"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "wholroyd.jinja"

@@ -26,6 +26,8 @@
 
 	code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
 	cc = "!git code-changes"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	gg = "branch -vv | grep \": gone]\"|  grep -v \"\\*\" | awk \"{ print $1; }\" | xargs -r git branch -d"
 
 [core]
 	excludesfile = /Users/mark.ayers/.gitignore_global
