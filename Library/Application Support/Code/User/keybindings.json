@@ -1,18 +1,18 @@
 [
-    {
-        "key": "shift+cmd+/",
-        "command": "workbench.action.toggleMaximizedPanel"
-    },
-    {
-        "key": "cmd+n",
-        "command": "explorer.newFile"
-    },
-    {
-        "key": "alt+cmd+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "cmd+n",
-        "command": "-workbench.action.files.newUntitledFile"
-    }
+  {
+    "key": "shift+cmd+/",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  }
 ]
