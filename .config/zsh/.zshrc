@@ -4,7 +4,7 @@ export ZSHRC_LOADED=1
 
 # initialize zcomet package manager
 if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
-	command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
+  command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
 fi
 source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
 
@@ -29,8 +29,7 @@ alias history='fc -l 1'     # list all history with line numbers
 # autoload -Uz add-zsh-hook
 # add-zsh-hook precmd delete-failed-history
 
-setopt AUTO_CD              # cd into directory when typing its name
-
+setopt AUTO_CD # cd into directory when typing its name
 
 # set language
 export LANG=en_US.UTF-8
@@ -61,9 +60,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # initialize function path
 fpath=(/opt/homebrew/share/zsh/site-functions ${fpath})
 if type brew &>/dev/null; then
-	FPATH=$(brew --prefix)/share/zsh-completions:${FPATH}
-	autoload -Uz compinit
-	compinit
+  FPATH=$(brew --prefix)/share/zsh-completions:${FPATH}
+  autoload -Uz compinit
+  compinit
 fi
 
 # initialize homebrew installed tools paths
@@ -97,21 +96,21 @@ alias kn='kubens'
 
 # open explainshell with command
 function es() {
-	open "https://explainshell.com/explain?cmd=$*"
+  open "https://explainshell.com/explain?cmd=$*"
 }
 
 # aggressively deep clean git repo
 function gdc() {
-	set -o xtrace
-	git count-objects --verbose --human-readable
-	git reflog expire --expire=now --all
-	git repack -adf --depth=250 --window=250
-	git gc --aggressive --prune=now --force
-	git gc
-	git gc --aggressive
-	git repack -Ad
-	git prune
-	git count-objects --verbose --human-readable
+  set -o xtrace
+  git count-objects --verbose --human-readable
+  git reflog expire --expire=now --all
+  git repack -adf --depth=250 --window=250
+  git gc --aggressive --prune=now --force
+  git gc
+  git gc --aggressive
+  git repack -Ad
+  git prune
+  git count-objects --verbose --human-readable
 }
 
 # Enable comments when working in an interactive shell.

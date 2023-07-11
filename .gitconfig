@@ -1,44 +1,44 @@
 [user]
-	name = Mark Ayers
-	email = mark.ayers@hypori.com
-	initials = MA
+name = Mark Ayers
+email = mark.ayers@hypori.com
+initials = MA
 
 [push]
-	autoSetupRemote = true
+autoSetupRemote = true
 
 [alias]
-	s = status
-	br = branch
-	ci = commit
-	co = checkout
+s = status
+br = branch
+ci = commit
+co = checkout
 
-	lo = log --decorate --pretty=oneline --abbrev-commit --all
+lo = log --decorate --pretty=oneline --abbrev-commit --all
 
-	fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
-	up = pull --rebase --autostash --prune
+fa = fetch --all --auto-gc --auto-maintenance --prune --prune-tags --recurse-submodules --tags
+up = pull --rebase --autostash --prune
 
-	same = commit --amend --no-edit
-	please = push --force-with-lease
+same = commit --amend --no-edit
+please = push --force-with-lease
 
-	ignored = ls-files --others
+ignored = ls-files --others
 
-	set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
+set-upstream = !git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)
 
-	code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
-	cc = "!git code-changes"
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	gg = "branch -vv | grep \": gone]\"|  grep -v \"\\*\" | awk \"{ print $1; }\" | xargs -r git branch -d"
+code-changes = "!git log --format=format: --name-only | egrep -v '^$' | sort | uniq -c | sort -rg | head -10"
+cc = "!git code-changes"
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+gg = "branch -vv | grep \": gone]\"| grep -v \"\\*\" | awk \"{ print $1; }\" | xargs -r git branch -d"
 
 [core]
-	excludesfile = /Users/mark.ayers/.gitignore_global
+excludesfile = /Users/mark.ayers/.gitignore_global
 
 [commit]
-	template = /Users/mark.ayers/.gitmessage
+template = /Users/mark.ayers/.gitmessage
 
 [credential "https://github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+helper =
+helper = !/opt/homebrew/bin/gh auth git-credential
 
 [credential "https://gist.github.com"]
-	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+helper =
+helper = !/opt/homebrew/bin/gh auth git-credential

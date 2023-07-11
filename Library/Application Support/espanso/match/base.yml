@@ -1,8 +1,8 @@
 matches:
-  - trigger: ":date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
+- trigger: ":date"
+  replace: "{{mydate}}"
+  vars:
+  - name: mydate
+    type: date
+    params:
+      format: "%Y-%m-%d"
