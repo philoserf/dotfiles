@@ -17,6 +17,7 @@ if [[ ${SHLVL} == 1 ]]; then
   # PATH="${PATH}:"
   PATH="${PATH}:/usr/local/bin:/usr/bin:/bin"
   PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
+  PATH="/opt/homebrew/bin:${PATH}"
   export PATH
 
   MANPATH="/usr/local/man:${MANPATH}"
