@@ -1,12 +1,29 @@
 {
+  // macOS Modern Tweaks
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Fira Code', monospace",
+  // "editor.fontSize": 12,
+  // "editor.fontFamily": "SF Mono, Monaco",
+  "editor.tabSize": 2,
+  "editor.fontWeight": "normal",
+  "window.titleBarStyle": "native",
+  "window.nativeTabs": true,
+  "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
+  // Disable Tab File Icons
+  "workbench.editor.showIcons": false,
+  // Disable Red Sidebar Errors
+  "problems.decorations.enabled": false,
+  // Activitus Bar
+  "activitusbar.activeColour": "#615F61",
+  "workbench.activityBar.visible": true,
+  "activitusbar.views": [{ "name": "todo-tree-view", "codicon": "list-tree" }],
+
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Default Dark Modern",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
+  "workbench.preferredLightColorTheme": "MacOS Modern Light - Ventura Xcode",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
 
-  "editor.fontSize": 16,
-  "editor.fontFamily": "'Fira Code', monospace",
   "editor.inlineSuggest.enabled": true,
 
   "files.trimFinalNewlines": true,
@@ -38,12 +55,6 @@
       "url": "https://droidcloud.atlassian.net/browse/CHI-<num>"
     }
   ],
-
-  "groovyLint.fix.trigger": "onSave",
-
-  "jenkins.pipeline.linter.connector.crumbUrl": "https://jorra.droidcloud.mobi/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,%22:%22,//crumb",
-  "jenkins.pipeline.linter.connector.url": "https://jorra.droidcloud.mobi/pipeline-model-converter/validate",
-  "jenkins.pipeline.linter.connector.user": "mark.ayers",
 
   "projectManager.git.baseFolders": ["~/source"],
 
@@ -96,5 +107,7 @@
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": true
   },
-  "workbench.colorTheme": "Default Light Modern"
+  "workbench.colorTheme": "MacOS Modern Light - Ventura Xcode",
+  "workbench.productIconTheme": "macos-modern",
+  "projectManager.sortList": "Path"
 }
