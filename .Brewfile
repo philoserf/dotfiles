@@ -81,3 +81,8 @@ tap "homebrew/bundle"
 # new items
 brew "terraform-docs"
 brew "driftctl"
+brew "aztfexport"
+cask "docker"
+brew "markdownlint-cli"
+brew "speedtest-cli"
+cask "visual-studio-code"
