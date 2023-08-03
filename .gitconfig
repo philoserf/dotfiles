@@ -12,6 +12,7 @@ helper = osxkeychain
 [core]
 excludesfile = ~/.gitignore
 whitespace = warn
+	ignorecase = false
 
 [fetch]
 showForcedUpdates = true

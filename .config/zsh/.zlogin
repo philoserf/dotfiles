@@ -12,5 +12,10 @@ for folder in secret include; do
   done
 done
 
-[[ ${commands[exa]} ]] && alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git'
-[[ ${commands[exa]} ]] && alias lla='ll --all'
+[[ ${commands[exa]} ]] &&
+  alias ls='exa --icons --grid --git' \
+    alias la='ls --all' \
+    alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git' \
+    alias lla='ll --all'
+
+unset LS_COLORS LSCOLORS

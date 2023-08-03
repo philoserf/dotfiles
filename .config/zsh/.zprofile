@@ -11,9 +11,9 @@ zgenom ohmyzsh
 zgenom ohmyzsh plugins/history
 zgenom ohmyzsh plugins/ripgrep
 zgenom ohmyzsh plugins/ssh-agent
+zgenom ohmyzsh themes/clean
 
 zgenom loadall <<BUNDLES
-  chrissicool/zsh-256color
   djui/alias-tips
   unixorn/fzf-zsh-plugin
   unixorn/git-extra-commands
