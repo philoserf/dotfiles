@@ -2,3 +2,4 @@
 .ssh/hypori
 .ssh/*.key
 .gnupg/*.gpg
+.config/zsh/secrets/*.zsh

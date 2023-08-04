@@ -2,13 +2,11 @@
   // macOS Modern Tweaks
   "editor.fontSize": 16,
   "editor.fontFamily": "'Fira Code', monospace",
-  // "editor.fontSize": 12,
   // "editor.fontFamily": "SF Mono, Monaco",
   "editor.tabSize": 2,
   "editor.fontWeight": "normal",
   "window.titleBarStyle": "native",
   "window.nativeTabs": true,
-  "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
   // Disable Tab File Icons
   "workbench.editor.showIcons": false,
   // Disable Red Sidebar Errors
@@ -18,11 +16,14 @@
   "workbench.activityBar.visible": true,
   "activitusbar.views": [{ "name": "todo-tree-view", "codicon": "list-tree" }],
 
-  "window.autoDetectColorScheme": true,
+"window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
   "workbench.preferredLightColorTheme": "MacOS Modern Light - Ventura Xcode",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "MacOS Modern Light - Ventura Xcode",
+  "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
+  "workbench.productIconTheme": "macos-modern",
 
   "editor.inlineSuggest.enabled": true,
 
@@ -56,8 +57,9 @@
     }
   ],
 
-  "projectManager.git.baseFolders": ["~/source"],
-
+  "projectManager.git.baseFolders": [
+    "~/source"
+  ],
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
   "python.formatting.provider": "black",
 
@@ -107,7 +109,13 @@
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": true
   },
-  "workbench.colorTheme": "MacOS Modern Light - Ventura Xcode",
-  "workbench.productIconTheme": "macos-modern",
-  "projectManager.sortList": "Path"
+  "projectManager.sortList": "Path",
+  "gitlens.graph.minimap.dataType": "lines",
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
+  ],
+  "gitlens.graph.minimap.enabled": false
 }
