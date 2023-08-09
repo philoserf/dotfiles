@@ -1,6 +1,5 @@
 # load order 2 after /etc/zshenv and before /etc/zprofile
 
-export ZSHENV_LOADED=1
 export XDG_CONFIG_HOME="${HOME}/.config"
 export ZDOTDIR=${HOME}/.config/zsh
 

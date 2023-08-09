@@ -1,7 +1,5 @@
 # load order 6 after /etc/zshrc and before /etc/zlogin
 
-export ZSHRC_LOADED=1
-
 # initialize zcomet package manager
 if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
   command git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
