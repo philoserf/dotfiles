@@ -4,6 +4,6 @@ module.exports = {
     fontSize: 16,
     fontFamily: '"FiraCode Nerd Font", monospace',
   },
-  // plugins: ['hyper-native'],
+  plugins: ['hyper-native'],
   keymaps: {},
 };

@@ -10,18 +10,18 @@ export ZDOTDIR=${XDG_CONFIG_HOME}/zsh
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 if [[ ${SHLVL} == 1 ]]; then
-  unset PATH
-  PATH="${HOME}/bin:${HOME}/go/bin"
-  PATH="${PATH}:/Library/TeX/texbin"
-  PATH="${PATH}:/usr/local/MacGPG2/bin"
-  # PATH="${PATH}:"
-  PATH="${PATH}:/usr/local/bin:/usr/bin:/bin"
-  PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
-  PATH="/opt/homebrew/bin:${PATH}"
-  export PATH
+	unset PATH
+	PATH="${HOME}/bin:${HOME}/go/bin"
+	PATH="${PATH}:/Library/TeX/texbin"
+	PATH="${PATH}:/usr/local/MacGPG2/bin"
+	# PATH="${PATH}:"
+	PATH="${PATH}:/usr/local/bin:/usr/bin:/bin"
+	PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
+	PATH="/opt/homebrew/bin:${PATH}"
+	export PATH
 
-  MANPATH="/usr/local/man:${MANPATH}"
-  export MANPATH
+	MANPATH="/usr/local/man:${MANPATH}"
+	export MANPATH
 fi
 
 FPATH=/usr/local/share/zsh-completions:${FPATH}

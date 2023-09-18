@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << CADDYFILE>/usr/local/etc/Caddyfile
+cat <<CADDYFILE >/usr/local/etc/Caddyfile
 localhost
 root * /Users/mark.ayers/www
 file_server

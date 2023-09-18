@@ -27,7 +27,7 @@ zgenom loadall <<BUNDLES
 BUNDLES
 
 if ! zgenom saved; then
-  zgenom save
+	zgenom save
 fi
 
 zgenom compile .zshrc
@@ -35,3 +35,5 @@ zgenom compile .zshenv
 zgenom compile .zprofile
 zgenom compile .zlogin
 zgenom compile .zlogout
+
+PATH="/opt/homebrew/bin:${PATH}"

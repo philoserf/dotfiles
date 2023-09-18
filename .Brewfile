@@ -83,19 +83,24 @@ cask "font-fira-code-nerd-font"
 cask "font-fira-code"
 cask "font-open-dyslexic"
 
-
 tap "homebrew/services"
 brew "caddy", restart_service: true
 
 # recent additions
+brew "bfg"
+brew "black"
 brew "exa"
+brew "git-sizer"
 brew "grammarly-languageserver"
+brew "java"
 brew "kubectx"
 brew "kubernetes-cli"
+brew "markdownlint-cli"
+brew "prettier"
+brew "rbenv"
 brew "speedtest-cli"
 brew "yamllint"
 cask "devtoys"
 cask "grammarly-desktop"
 cask "hyper"
 cask "onyx"
-brew "java"
