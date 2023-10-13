@@ -8,5 +8,5 @@ bindkey -e
 alias rm='rm -i'
 alias mv='mv -i'
 
-eval "$(rbenv init - zsh)"
+[[ ${commands[rbenv]} ]] && eval "$(rbenv init - zsh)"
 PATH="/opt/homebrew/bin:${PATH}"

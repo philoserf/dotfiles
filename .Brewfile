@@ -89,7 +89,7 @@ brew "caddy", restart_service: true
 # recent additions
 brew "bfg"
 brew "black"
-brew "exa"
+brew "eza"
 brew "git-sizer"
 brew "grammarly-languageserver"
 brew "java"
@@ -104,3 +104,8 @@ cask "devtoys"
 cask "grammarly-desktop"
 cask "hyper"
 cask "onyx"
+
+brew "colima"
+cask "fantastical"
+cask "cardhop"
+cask "thingsmacsandboxhelper"

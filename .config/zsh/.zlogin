@@ -7,15 +7,16 @@
 [[ ${commands[starship]} ]] && source <(starship init zsh)
 
 for folder in secret include; do
-	for filename in "${ZDOTDIR}/$folder"/*; do
+	for filename in "${ZDOTDIR}/$folder"/*.zsh; do
 		source "$filename"
 	done
 done
 
-[[ ${commands[exa]} ]] &&
-	alias ls='exa --icons --grid --git' \
-		alias la='ls --all' \
-		alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git' \
-		alias lla='ll --all'
+[[ ${commands[eza]} ]] && (
+	alias ls='eza --icons --grid --git'
+	alias la='ls --all'
+	alias ll='exa --long --sort=modified --group-directories-first --time-style=long-iso --icons --grid --git'
+	alias lla='ll --all'
+)
 
 unset LS_COLORS LSCOLORS

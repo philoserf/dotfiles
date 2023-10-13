@@ -10,7 +10,6 @@ ZGEN_RESET_ON_CHANGE="${ZDOTDIR}/.zprofile"
 zgenom ohmyzsh
 zgenom ohmyzsh plugins/history
 zgenom ohmyzsh plugins/ripgrep
-zgenom ohmyzsh plugins/ssh-agent
 zgenom ohmyzsh themes/clean
 
 zgenom loadall <<BUNDLES

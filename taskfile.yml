@@ -1,43 +1,42 @@
 version: "3"
 
 env:
-GITHUB_ACTIONS: true
+  GITHUB_ACTIONS: true
 
 tasks:
-default:
-cmds:
-- task: all
+  default:
+    cmds:
+    - task: all
 
-all:
-desc: Run brew &
-system updates
-cmds:
-- task: brew
-- task: system
+  all:
+    desc: Run brew & system updates
+    cmds:
+    - task: brew
+    - task: system
 
-brew:
-desc: Run brew bundle install --global
-cmds:
-- brew update
-- brew bundle install --global
-- brew upgrade
-check:
-desc: Run brew bundle cleanup --global
-cmds:
-- brew bundle cleanup --global
-clean:
-desc: Run brew bundle cleanup --global --force
-cmds:
-- brew bundle cleanup --global --force
-- brew autoremove
-- brew cleanup --prune=all -s
+  brew:
+    desc: Run brew bundle install --global
+    cmds:
+    - brew update
+    - brew bundle install --global
+    - brew upgrade
+  check:
+    desc: Run brew bundle cleanup --global
+    cmds:
+    - brew bundle cleanup --global
+  clean:
+    desc: Run brew bundle cleanup --global --force
+    cmds:
+    - brew bundle cleanup --global --force
+    - brew autoremove
+    - brew cleanup --prune=all -s
 
-system:
-desc: Run softwareupdate --install --all
-cmds:
-- softwareupdate --install --all
+  system:
+    desc: Run softwareupdate --install --all
+    cmds:
+    - softwareupdate --install --all
 
-source:
-desc: Update local source
-cmds:
-- gitup --update --prune
+  source:
+    desc: Update local source
+    cmds:
+    - gitup --update --prune
