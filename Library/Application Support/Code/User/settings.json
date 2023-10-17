@@ -13,40 +13,34 @@
   "problems.decorations.enabled": false,
   // Activitus Bar
   "activitusbar.activeColour": "#615F61",
-  "workbench.activityBar.visible": true,
   "activitusbar.views": [{ "name": "todo-tree-view", "codicon": "list-tree" }],
 
-"window.autoDetectColorScheme": true,
+  "window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
   "workbench.preferredLightColorTheme": "MacOS Modern Light - Ventura Xcode",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "MacOS Modern Light - Ventura Xcode",
   "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
   "workbench.productIconTheme": "macos-modern",
+  "workbench.editor.empty.hint": "hidden",
+  "diffEditor.ignoreTrimWhitespace": false,
 
   "editor.inlineSuggest.enabled": true,
 
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
 
   "git.autofetch": true,
   "git.defaultCloneDirectory": "$HOME/source",
   "git.openRepositoryInParentFolders": "never",
+
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": true,
     "markdown": true,
-    "scminput": false
-  },
-
-  "go.formatTool": "gofumpt",
-  "go.lintFlags": ["[\"--enable-all\"]"],
-  "go.lintTool": "golangci-lint",
-  "go.useLanguageServer": true,
-  "gopls": {
-    "formatting.gofumpt": true
+    "scminput": false,
+    "yaml": true
   },
 
   "gitlens.graph.layout": "panel",
@@ -56,12 +50,35 @@
       "url": "https://droidcloud.atlassian.net/browse/CHI-<num>"
     }
   ],
-
-  "projectManager.git.baseFolders": [
-    "~/source"
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "gitlens.graph.minimap.dataType": "lines",
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
   ],
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.11",
-  "python.formatting.provider": "black",
+  "gitlens.hovers.autolinks.enabled": false,
+  "gitlens.hovers.autolinks.enhanced": false,
+  "gitlens.views.commitDetails.autolinks.enabled": false,
+  "gitlens.views.commitDetails.autolinks.enhanced": false,
+  "gitlens.graph.minimap.enabled": false,
+
+
+  "go.formatTool": "gofumpt",
+  "go.lintFlags": ["[\"--enable-all\"]"],
+  "go.lintTool": "golangci-lint",
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+
+  "gopls": {
+    "formatting.gofumpt": true
+  },
+
+  "projectManager.git.baseFolders": ["~/source"],
+  "projectManager.sortList": "Path",
 
   "redhat.telemetry.enabled": false,
 
@@ -70,52 +87,69 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font', monospace",
 
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.minikube-path.mac": "/Users/mark.ayers/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [120],
+    "editor.semanticHighlighting.enabled": true
   },
 
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
+
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
   },
+
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
+
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": true
-  },
-  "projectManager.sortList": "Path",
-  "gitlens.graph.minimap.dataType": "lines",
-  "gitlens.graph.minimap.additionalTypes": [
-    "localBranches",
-    "stashes",
-    "remoteBranches",
-    "tags"
-  ],
-  "gitlens.graph.minimap.enabled": false
+
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

@@ -76,7 +76,7 @@ zcomet compinit # initialize completion
 
 # aliases
 alias ..='cd ..'
-alias ls='exa --sort=modified --reverse --classify --group-directories-first --icons --color=always'
+alias ls='eza --sort=modified --reverse --classify --group-directories-first --icons --color=always'
 alias ll='ls --long'
 alias la='ls --all'
 alias lla='ll --all'

@@ -3,16 +3,41 @@ version: "3"
 tasks:
   default:
     cmds:
-    - softwareupdate --install --all
-    - brew update
-    - brew bundle --global
-    - brew upgrade
-    - brew autoremove
-    - brew bundle cleanup --global
+      - task: update
+      - task: bundle
+      - task: upgrade
+      - task: doctor
+      - task: check
+
+  system:
+    cmds:
+      - sudo softwareupdate --install --all --restart
+
+  update:
+    cmds:
+      - brew update
+
+  bundle:
+    cmds:
+      - brew bundle --global
+
+  upgrade:
+    cmds:
+      - brew upgrade
+
+  doctor:
+    cmds:
+      - brew doctor
+
   check:
     cmds:
-    - brew outdated
-    - brew bundle cleanup --global
+      - brew bundle cleanup --global
+      - brew bundle check --global
+
+  outdated:
+    cmds:
+      - brew outdated
+
   clean:
     cmds:
     - brew autoremove
