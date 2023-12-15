@@ -41,6 +41,7 @@ zcomet load MichaelAquilina/zsh-you-should-use # suggest better alternatives to 
 
 zcomet load unixorn/git-extra-commands # add some useful git aliases
 zcomet load unixorn/tumult.plugin.zsh  # add some useful aliases
+zcomet load chrisgrieser/zsh-magic-dashboard # add a dashboard with useful information
 
 zcomet load zsh-users/zsh-completions              # additional completions from the community
 zcomet load zsh-users/zsh-syntax-highlighting      # syntax highlighting for the shell

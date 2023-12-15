@@ -1,21 +1,22 @@
 {
   // macOS Modern Tweaks
   "editor.fontSize": 16,
-  "editor.fontFamily": "'Fira Code', monospace",
-  // "editor.fontFamily": "SF Mono, Monaco",
+  "editor.fontFamily": "'FiraCode', monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
   "editor.tabSize": 2,
   "editor.fontWeight": "normal",
+  "editor.inlineSuggest.enabled": true,
+
   "window.titleBarStyle": "native",
   "window.nativeTabs": true,
-  // Disable Tab File Icons
-  "workbench.editor.showIcons": false,
-  // Disable Red Sidebar Errors
+  "window.autoDetectColorScheme": true,
+
   "problems.decorations.enabled": false,
-  // Activitus Bar
+
   "activitusbar.activeColour": "#615F61",
   "activitusbar.views": [{ "name": "todo-tree-view", "codicon": "list-tree" }],
 
-  "window.autoDetectColorScheme": true,
+  "workbench.editor.showIcons": false,
   "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode",
   "workbench.preferredLightColorTheme": "MacOS Modern Light - Ventura Xcode",
   "workbench.startupEditor": "none",
@@ -23,9 +24,8 @@
   "workbench.iconTheme": "macos-modern-big-sur-icon-theme",
   "workbench.productIconTheme": "macos-modern",
   "workbench.editor.empty.hint": "hidden",
-  "diffEditor.ignoreTrimWhitespace": false,
 
-  "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -42,6 +42,8 @@
     "scminput": false,
     "yaml": true
   },
+  "github.copilot-labs.showTestGenerationLenses": true,
+  "github.copilot-labs.showBrushesLenses": true,
 
   "gitlens.graph.layout": "panel",
   "gitlens.autolinks": [
@@ -151,5 +153,9 @@
 
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[tf]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
   }
 }
